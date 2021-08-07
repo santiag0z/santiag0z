@@ -6,7 +6,7 @@
 <div>
   <a href="https://github.com/santiagosilvaz">
     <img height="180em" src="https://github-readme-stats.vercel.app/api?username=santiagosilvaz&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=santiagosilvaz&theme=dark&include_all_commits=true&count_private=true&layout=compact"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=santiagosilvaz&theme=dark&include_all_commits=true&count_private=true"/>
 </div>
 
 <div style="display: inline_block"><br>
