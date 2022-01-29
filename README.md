@@ -16,7 +16,7 @@
     <img align="center" alt="SantiagoZ-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
     <img align="center" alt="SantiagoZ-Linux" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
     <img align="center" alt="SantiagoZ-Grfana" height="30" width="40" src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg">
-     <img align="center" alt="SantiagoZ-Huawei" height="" width="" src="https://www.logo.wine/a/logo/Huawei/Huawei-Vertical-Logo.wine.svg">
+     <img align="center" alt="SantiagoZ-Huawei" height="30" width="40" src="https://cdn.iconscout.com/icon/free/png-256/huawei-3521494-2944938.png">
 </div>
 
 ##
