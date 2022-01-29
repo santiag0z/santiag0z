@@ -19,7 +19,7 @@
     <img align="center" alt="SantiagoZ-Huawei" height="30" width="30" src="https://cdn.iconscout.com/icon/free/png-256/huawei-3521494-2944938.png">
     <img align="center" alt="SantiagoZ-Cisco" height="30" width="90" src="https://demo.librenms.org/images/os/cisco.svg">
     <img align="center" alt="SantiagoZ-MikroTik" height="30" width="100" src="https://i.mt.lv/img/mt/v2/logo.svg">
-    <img align="center" alt="SantiagoZ-LibreNMS" height="90" width="120" src="https://demo.librenms.org/images/librenms_logo_light.svg">
+    <img align="center" alt="SantiagoZ-LibreNMS" height="60" width="150" src="https://demo.librenms.org/images/librenms_logo_light.svg">
     <img align="center" alt="SantiagoZ-GrayLog" height="30" width="100" src="https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/5f69ecdab29e533a9f46b3ef_Graylog%20-%20Logo%20-%20Color.svg">
 </div>
 
