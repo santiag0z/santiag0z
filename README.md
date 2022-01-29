@@ -12,15 +12,15 @@
 </div>
 
 <div style="display: inline_block"><br>
-    <img align="center" alt="SantiagoZ-Git" height="40" width="50" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg">
-    <img align="center" alt="SantiagoZ-Python" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-    <img align="center" alt="SantiagoZ-Linux" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
-    <img align="center" alt="SantiagoZ-Cisco" height="40" width="100" src="https://demo.librenms.org/images/os/cisco.svg">
-    <img align="center" alt="SantiagoZ-Huawei" height="40" width="40" src="https://cdn.iconscout.com/icon/free/png-256/huawei-3521494-2944938.png">
-    <img align="center" alt="SantiagoZ-MikroTik" height="40" width="100" src="https://i.mt.lv/img/mt/v2/logo.svg">
-    <img align="center" alt="SantiagoZ-LibreNMS" height="40" width="150" src="https://demo.librenms.org/images/librenms_logo_light.svg">
-    <img align="center" alt="SantiagoZ-Grfana" height="40" width="50" src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg">
-    <img align="center" alt="SantiagoZ-GrayLog" height="30" width="`150" src="https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/5f69ecdab29e533a9f46b3ef_Graylog%20-%20Logo%20-%20Color.svg">
+    <img align="center" alt="SantiagoZ-Git" height="30" width="40" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg">
+    <img align="center" alt="SantiagoZ-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+    <img align="center" alt="SantiagoZ-Linux" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
+    <img align="center" alt="SantiagoZ-Cisco" height="30" width="100" src="https://demo.librenms.org/images/os/cisco.svg">
+    <img align="center" alt="SantiagoZ-Huawei" height="30" width="30" src="https://cdn.iconscout.com/icon/free/png-256/huawei-3521494-2944938.png">
+    <img align="center" alt="SantiagoZ-MikroTik" height="30" width="100" src="https://i.mt.lv/img/mt/v2/logo.svg">
+    <img align="center" alt="SantiagoZ-LibreNMS" height="30" width="150" src="https://demo.librenms.org/images/librenms_logo_light.svg">
+    <img align="center" alt="SantiagoZ-Grfana" height="30" width="40" src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg">
+    <img align="center" alt="SantiagoZ-GrayLog" height="30" width="150" src="https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/5f69ecdab29e533a9f46b3ef_Graylog%20-%20Logo%20-%20Color.svg">
 </div>
 
 ##
