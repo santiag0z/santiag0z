@@ -16,7 +16,7 @@
     <img align="center" alt="SantiagoZ-Python" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
     <img align="center" alt="SantiagoZ-Linux" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
     <img align="center" alt="SantiagoZ-Huawei" height="40" width="40" src="https://cdn.iconscout.com/icon/free/png-256/huawei-3521494-2944938.png">
-    <img align="center" alt="SantiagoZ-GrayLog" height="40" width="100" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Graylog-logo-blk.jpg">
+    <img align="center" alt="SantiagoZ-GrayLog" height="40" width="100" src="https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/5f69ecdab29e533a9f46b3ef_Graylog%20-%20Logo%20-%20Color.svg">
     <img align="center" alt="SantiagoZ-LibreNMS" height="40" width="40" src="https://avatars.githubusercontent.com/u/5791783?s=200&v=4">
     <img align="center" alt="SantiagoZ-Grfana" height="40" width="50" src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg">
 </div>
