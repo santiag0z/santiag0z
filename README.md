@@ -1,5 +1,8 @@
 ## Hi, I'm Santiago Silva
 
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=SantiagoSilvaZ&color=blue&style=flat" alt="Santiago Z" /> </p>
+
+
 - 🔭 I'm currently working on networks and infrastructure 
 - 🌱 I'm currently learning **Ansible and Router & Switch**
 
