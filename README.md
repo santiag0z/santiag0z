@@ -17,8 +17,8 @@
     <img align="center" alt="SantiagoZ-Linux" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
     <img align="center" alt="SantiagoZ-Cisco" height="40" width="100" src="https://demo.librenms.org/images/os/cisco.svg">
     <img align="center" alt="SantiagoZ-Huawei" height="40" width="40" src="https://cdn.iconscout.com/icon/free/png-256/huawei-3521494-2944938.png">
-    <img align="center" alt="SantiagoZ-GrayLog" height="40" width="`175" src="https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/5f69ecdab29e533a9f46b3ef_Graylog%20-%20Logo%20-%20Color.svg">
-    <img align="center" alt="SantiagoZ-LibreNMS" height="40" width="175" src="https://demo.librenms.org/images/librenms_logo_light.svg">
+    <img align="center" alt="SantiagoZ-GrayLog" height="40" width="`190" src="https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/5f69ecdab29e533a9f46b3ef_Graylog%20-%20Logo%20-%20Color.svg">
+    <img align="center" alt="SantiagoZ-LibreNMS" height="40" width="190" src="https://demo.librenms.org/images/librenms_logo_light.svg">
     <img align="center" alt="SantiagoZ-Grfana" height="40" width="50" src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg">
 </div>
 
