@@ -1,9 +1,14 @@
-## Olá!
+## Olá! Sou Santiago Z
 
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=SantiagoSilvaZ&color=blue&style=flat" alt="Santiago Z" /> </p>
 
 
-- 🔭 Sou Santiago Z, Tecnólogo em Análise e Desenvolvimento de Sistema e MBE Especialização Lato Sensu em Estrutura e Gestão de Redes de Computadores.
+- 📚 Formação acadêmica
+- Técnico em Redes de Computadores (Escola Estadual de Educação Profissional Francisca Castro de Mesquita)
+- Tecnólogo em Análise e Desenvolvimento de Sistema (UNOPAR - Universidade Norte do Paraná)
+- MBE Especialização Lato Sensu em Estrutura e Gestão de Redes de Computadores (UNINTER Centro Universitário Internacional)
+
+🔭 
 
 
 <div>
