@@ -10,7 +10,7 @@
 
 - Certificações:
     - MikroTik
-        - MTCNA - MikroTik Certified Network Associate | ([1909NA3906](https://mikrotik.com/training/certificates/b163906ca7d75ad25d15))
+        - MTCNA - MikroTik Certified Network Associate | [1909NA3906](https://mikrotik.com/training/certificates/b163906ca7d75ad25d15)
 
 ##
 
