@@ -1,9 +1,10 @@
-## Hi, I'm Santiago Z.
+## Olá!
 
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=SantiagoSilvaZ&color=blue&style=flat" alt="Santiago Z" /> </p>
 
 
-- 🔭 I'm currently working on networks and infrastructure 
+- 🔭 Sou Santiago Z, Tecnólogo em Análise e Desenvolvimento de Sistemas, e MBE Especialização Lato Sensu em Estrutura e Gestão de Redes de Computadores.
+
 
 <div>
   <a href="https://github.com/santiagosilvaz">
