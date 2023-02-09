@@ -1,23 +1,23 @@
 ## Olá! Sou Santiago Z 
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=santiag0z&color=blue&style=flat" alt="Santiago Z" /> </p>
 
-🔬 Formação Acadêmica:
-- MBE Especialização Lato Sensu em Estrutura e Gestão de Redes de Computadores (UNINTER Centro Universitário Internacional)
-- Tecnólogo em Análise e Desenvolvimento de Sistema (UNOPAR - Universidade Norte do Paraná)
-- Técnico em Redes de Computadores (Escola Estadual de Educação Profissional Francisca Castro de Mesquita)
+- Formação Acadêmica:
+    - MBE Especialização Lato Sensu em Estrutura e Gestão de Redes de Computadores (UNINTER Centro Universitário Internacional)
+    - Tecnólogo em Análise e Desenvolvimento de Sistema (UNOPAR - Universidade Norte do Paraná)
+    - Técnico em Redes de Computadores (Escola Estadual de Educação Profissional Francisca Castro de Mesquita)
 
 ##
 
-📚 Certificações:
-- MikroTik
-    - MTCNA - MikroTik Certified Network Associate | ([1909NA3906](https://mikrotik.com/training/certificates/b163906ca7d75ad25d15))
+- Certificações:
+    - MikroTik
+        - MTCNA - MikroTik Certified Network Associate | ([1909NA3906](https://mikrotik.com/training/certificates/b163906ca7d75ad25d15))
 
 ##
 
-Contribuições em Projetos Open Sources
-- LibreNMS Project
-    - LibreNMS - [Commits](https://github.com/librenms/librenms/commits?author=santiag0z)
-    - Docker   - [Commits](https://github.com/librenms/docker/commits?author=santiag0z)
+- Contribuições em Projetos Open Sources:
+    - LibreNMS Project
+        - LibreNMS - [Commits](https://github.com/librenms/librenms/commits?author=santiag0z)
+        - Docker   - [Commits](https://github.com/librenms/docker/commits?author=santiag0z)
 
 ##
 
