@@ -1,6 +1,4 @@
-## Olá! Sou Santiago Z
-
-<p align="right"> <img src="https://komarev.com/ghpvc/?username=santiag0z&color=blue&style=flat" alt="Santiago Z" /> </p>
+## Olá! Sou Santiago Z <p align="right"> <img src="https://komarev.com/ghpvc/?username=santiag0z&color=blue&style=flat" alt="Santiago Z" /> </p>
 
 📚 Formação Acadêmica:
 - MBE Especialização Lato Sensu em Estrutura e Gestão de Redes de Computadores (UNINTER Centro Universitário Internacional)
@@ -11,7 +9,7 @@
 
 📜 Certificações:
 - MikroTik
-    - MTCNA - MikroTik Certified Network Associate <a 1 href="https://mikrotik.com/training/certificates/b163906ca7d75ad25d15" target="_blank">
+    - MTCNA - MikroTik Certified Network Associate <a href="https://mikrotik.com/training/certificates/b163906ca7d75ad25d15" target="_blank">
 
 
 <div>
