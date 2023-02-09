@@ -8,7 +8,9 @@
 - Tecnólogo em Análise e Desenvolvimento de Sistema (UNOPAR - Universidade Norte do Paraná)
 - MBE Especialização Lato Sensu em Estrutura e Gestão de Redes de Computadores (UNINTER Centro Universitário Internacional)
 
-🔭 
+📜 Certificações:
+- MikroTik
+    - MTCNA - MikroTik Certified Network Associate <a href="https://mikrotik.com/training/certificates/b163906ca7d75ad25d15" target="_blank">
 
 
 <div>
@@ -36,3 +38,6 @@
 </div>
 
 ![Snake animation](https://github.com/santiag0z/santiag0z/blob/output/github-contribution-grid-snake.svg)
+
+
+🔭
