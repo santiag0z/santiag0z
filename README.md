@@ -20,6 +20,22 @@
         - Docker   - [Commits](https://github.com/librenms/docker/commits?author=santiag0z)
 
 ##
+- Intelecção:
+    - AAA (FreeRadius e Tacacs Plus)
+    - Ansible
+    - Docker
+    - Git
+    - Grafana
+    - Network Vendor (Cisco, Datacom, FiberHome, Huawei, Juniper e MikroTik)
+    - NMS (LibreNMS, PRTG Monitor e Zabbix)
+    - phpIPAM
+    - Protocolos (IPv4, IPv6, OSPF, MPLS e BGP)
+    - Oxidized
+    - Weathemap
+
+
+    
+
 
 <div>
   <a href="https://github.com/santiag0z">
