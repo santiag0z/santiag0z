@@ -1,1 +1,55 @@
-site_name: My Docs
+# Project information
+site_name: santiag0z
+site_url: https://santiag0z.github.io/santiag0z
+site_author: Santiago.Z
+site_description: >-
+  santiag0z
+
+# Repository
+repo_name: santiag0z/santiag0z
+repo_url: https://github.com/santiag0z/santiag0z
+
+# Copyright
+copyright: Copyright &copy; Santiago.Z
+
+# Configuration
+theme:
+  name: material
+  #  custom_dir: material/overrides
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/santiag0z/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/santiago-z/
+
+# Page tree
+nav:
+  - Home: index.md
