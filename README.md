@@ -71,18 +71,11 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC)
 ![WinBox](https://img.shields.io/badge/-WinBox-333333?style=flat&logo=mikroTik)
 
-
 ##
 
-- Contributions to Open Sources Projects:
-    - LibreNMS Project
-        - LibreNMS - [Commits](https://github.com/librenms/librenms/commits?author=santiag0z)
-        - Docker   - [Commits](https://github.com/librenms/docker/commits?author=santiag0z)
+###  Contributions
+
+LibreNMS Project: [LibreNMS](https://github.com/librenms/librenms/commits?author=santiag0z) [Docker](https://github.com/librenms/docker/commits?author=santiag0z))
 
 ##
-
-
-
-##
-
 ![Snake animation](https://github.com/santiag0z/santiag0z/blob/output/github-contribution-grid-snake.svg)
