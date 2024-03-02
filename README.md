@@ -35,21 +35,6 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Wanguard](https://img.shields.io/badge/-Wanguard-333333?style=flat&logo=wanguard)
 ![Zabbix](https://img.shields.io/badge/-Zabbix-333333?style=flat&logo=zabbix)
 
-**DevOps**
-
-![Ansible](https://img.shields.io/badge/-Ansible-333333?style=flat&logo=ansible)
-![Docker](https://img.shields.io/badge/-Docker-333333?style=flat&logo=docker)
-![Draw.io](https://img.shields.io/badge/-Draw.io-333333?style=flat&logo=draw.io)
-![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
-![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)
-![JSON](https://img.shields.io/badge/-JSON-333333?style=flat&logo=json)
-![MariaDB](https://img.shields.io/badge/-MariaDB-333333?style=flat&logo=mariadb)
-![Markdown](https://img.shields.io/badge/-Markdown-333333?style=flat&logo=Markdown)
-![Nginx](https://img.shields.io/badge/-Nginx-333333?style=flat&logo=nginx)
-![RRDTool](https://img.shields.io/badge/-RRDTool-333333?style=flat&logo=rrdtool)
-![YAML](https://img.shields.io/badge/-YAML-333333?style=flat&logo=yaml)
-
-
 **Network Vendor**
 
 ![A10 Networks](https://img.shields.io/badge/-A10%20Networks-333333?style=flat&logo=a10networks)
@@ -59,6 +44,20 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Huawei](https://img.shields.io/badge/-Huawei-333333?style=flat&logo=huawei)
 ![junipernetworks](https://img.shields.io/badge/-Juniper%20Networks-333333?style=flat&logo=junipernetworks)
 ![MikroTik](https://img.shields.io/badge/-MikroTik-333333?style=flat&logo=mikroTik)
+
+**Operation**
+
+![Ansible](https://img.shields.io/badge/-Ansible-333333?style=flat&logo=ansible)
+![Docker](https://img.shields.io/badge/-Docker-333333?style=flat&logo=docker)
+![Draw.io](https://img.shields.io/badge/-Draw.io-333333?style=flat&logo=diagramsdotnet)
+![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
+![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)
+![JSON](https://img.shields.io/badge/-JSON-333333?style=flat&logo=json)
+![MariaDB](https://img.shields.io/badge/-MariaDB-333333?style=flat&logo=mariadb)
+![Markdown](https://img.shields.io/badge/-Markdown-333333?style=flat&logo=Markdown)
+![Nginx](https://img.shields.io/badge/-Nginx-333333?style=flat&logo=nginx)
+![RRDTool](https://img.shields.io/badge/-RRDTool-333333?style=flat&logo=rrdtool)
+![YAML](https://img.shields.io/badge/-YAML-333333?style=flat&logo=yaml)
 
 **Utilities**
 
