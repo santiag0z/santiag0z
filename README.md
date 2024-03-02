@@ -48,7 +48,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 **Operation**
 
 ![Ansible](https://img.shields.io/badge/-Ansible-333333?style=flat&logo=ansible)
-![GNU Bash](https://img.shields.io/badge/-Bash-333333?style=flat&logo=gnubash)
+![Bash](https://img.shields.io/badge/-Bash-333333?style=flat&logo=gnubash)
 ![Docker](https://img.shields.io/badge/-Docker-333333?style=flat&logo=docker)
 ![Draw.io](https://img.shields.io/badge/-Draw.io-333333?style=flat&logo=diagramsdotnet)
 ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
@@ -60,7 +60,13 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![RRDTool](https://img.shields.io/badge/-RRDTool-333333?style=flat&logo=rrdtool)
 ![YAML](https://img.shields.io/badge/-YAML-333333?style=flat&logo=yaml)
 
-gnubash
+**Operational Systems**
+
+![debian](https://img.shields.io/badge/-Debian-333333?style=flat&logo=debian)
+![kalilinux](https://img.shields.io/badge/-Kali%20Linux-333333?style=flat&logo=kalilinux)
+![macos](https://img.shields.io/badge/-macOS-333333?style=flat&logo=macos)
+![Ubuntu](https://img.shields.io/badge/-Ubuntu-333333?style=flat&logo=ubuntu)
+![windows](https://img.shields.io/badge/-Windows-333333?style=flat&logo=windows)
 
 **Utilities**
 
