@@ -51,7 +51,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 
 **Network Vendor**
 
-![A10 Networks](https://img.shields.io/badge/-A10Networks-333333?style=flat&logo=a10networks)
+![A10 Networks](https://img.shields.io/badge/-A10%20Networks-333333?style=flat&logo=a10networks)
 ![Cisco](https://img.shields.io/badge/-Cisco-333333?style=flat&logo=cisco)
 ![Datacom](https://img.shields.io/badge/-Datacom-333333?style=flat&logo=datacom)
 ![FiberHome](https://img.shields.io/badge/-FiberHome-333333?style=flat&logo=fiberhome)
