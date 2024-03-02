@@ -39,6 +39,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 
 ![Ansible](https://img.shields.io/badge/-Ansible-333333?style=flat&logo=ansible)
 ![Docker](https://img.shields.io/badge/-Docker-333333?style=flat&logo=docker)
+![Draw.io](https://img.shields.io/badge/-Draw.io-333333?style=flat&logo=draw.io)
 ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)
 ![JSON](https://img.shields.io/badge/-JSON-333333?style=flat&logo=json)
