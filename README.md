@@ -20,6 +20,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 
 **Applications**
 
+![Cachet](https://img.shields.io/badge/-Cachet-333333?style=flat&logo=cachet)
 ![DmView](https://img.shields.io/badge/-DmView-333333?style=flat&logo=dmview)
 ![FreeRADIUS](https://img.shields.io/badge/-FreeRADIUS-333333?style=flat&logo=freeradius)
 ![Grafana](https://img.shields.io/badge/-Grafana-333333?style=flat&logo=grafana)
@@ -55,7 +56,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Datacom](https://img.shields.io/badge/-Datacom-333333?style=flat&logo=datacom)
 ![FiberHome](https://img.shields.io/badge/-FiberHome-333333?style=flat&logo=fiberhome)
 ![Huawei](https://img.shields.io/badge/-Huawei-333333?style=flat&logo=huawei)
-![Juniper](https://img.shields.io/badge/-Juniper-333333?style=flat&logo=juniper)
+![junipernetworks](https://img.shields.io/badge/-Juniper%20Networks-333333?style=flat&logo=junipernetworks)
 ![MikroTik](https://img.shields.io/badge/-MikroTik-333333?style=flat&logo=mikroTik)
 
 **Utilities**
