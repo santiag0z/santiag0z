@@ -72,6 +72,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 
 ![Beekeeper Studio](https://img.shields.io/badge/-Beekeeper-333333?style=flat&logo=beekeeper)
 ![FileZilla](https://img.shields.io/badge/-FileZilla-333333?style=flat&logo=fileZilla)
+![Google Sheets](https://img.shields.io/badge/-Google%20Sheets-333333?style=flat&logo=googlesheets)
 ![MkDocs](https://img.shields.io/badge/-MkDocs-333333?style=flat&logo=Markdown)
 ![Notion](https://img.shields.io/badge/-Notion-333333?style=flat&logo=notion)
 ![Postman](https://img.shields.io/badge/-Postman-333333?style=flat&logo=postman)
@@ -79,6 +80,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Termius](https://img.shields.io/badge/-Termius-333333?style=flat&logo=termius)
 ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC)
 ![WinBox](https://img.shields.io/badge/-WinBox-333333?style=flat&logo=mikroTik)
+
 
 ##
 
