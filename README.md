@@ -65,6 +65,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![debian](https://img.shields.io/badge/-Debian-333333?style=flat&logo=debian)
 ![kalilinux](https://img.shields.io/badge/-Kali%20Linux-333333?style=flat&logo=kalilinux)
 ![macos](https://img.shields.io/badge/-macOS-333333?style=flat&logo=macos)
+![Raspberry Pi](https://img.shields.io/badge/-Raspberry%20Pi-333333?style=flat&logo=raspberrypi)
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-333333?style=flat&logo=ubuntu)
 ![windows](https://img.shields.io/badge/-Windows-333333?style=flat&logo=windows)
 
