@@ -70,9 +70,11 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 
 **Utilities**
 
-![Beekeeper Studio](https://img.shields.io/badge/-Beekeeper-333333?style=flat&logo=beekeeper)
+![Beekeeper Studio](https://img.shields.io/badge/-Beekeeper%20Studio-333333?style=flat&logo=beekeeper)
 ![FileZilla](https://img.shields.io/badge/-FileZilla-333333?style=flat&logo=fileZilla)
+![Google Docs](https://img.shields.io/badge/-Google%20Docs-333333?style=flat&logo=googledocs)
 ![Google Sheets](https://img.shields.io/badge/-Google%20Sheets-333333?style=flat&logo=googlesheets)
+![Homebrew](https://img.shields.io/badge/-Homebrew-333333?style=flat&logo=homebrew)
 ![MkDocs](https://img.shields.io/badge/-MkDocs-333333?style=flat&logo=Markdown)
 ![Notion](https://img.shields.io/badge/-Notion-333333?style=flat&logo=notion)
 ![Postman](https://img.shields.io/badge/-Postman-333333?style=flat&logo=postman)
