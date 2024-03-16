@@ -27,6 +27,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Graylog](https://img.shields.io/badge/-Graylog-333333?style=flat&logo=graylog)
 ![Krill](https://img.shields.io/badge/-Krill-333333?style=flat&logo=krill)
 ![LibreNMS](https://img.shields.io/badge/-LibreNMS-333333?style=flat&logo=librenms)
+![Metabase](https://img.shields.io/badge/-Metabase-333333?style=flat&logo=metabase)
 ![Oxidized](https://img.shields.io/badge/-Oxidized-333333?style=flat&logo=oxidized)
 ![phpIPAM](https://img.shields.io/badge/-phpIPAM-333333?style=flat&logo=phpIPAM)
 ![RRDReST](https://img.shields.io/badge/-RRDReST-333333?style=flat&logo=rrdrest)
