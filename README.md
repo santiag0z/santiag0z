@@ -59,6 +59,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Markdown](https://img.shields.io/badge/-Markdown-333333?style=flat&logo=Markdown)
 ![Nginx](https://img.shields.io/badge/-Nginx-333333?style=flat&logo=nginx)
 ![RRDTool](https://img.shields.io/badge/-RRDTool-333333?style=flat&logo=rrdtool)
+![Vagrant](https://img.shields.io/badge/-Vagrant-333333?style=flat&logo=vagrant)
 ![YAML](https://img.shields.io/badge/-YAML-333333?style=flat&logo=yaml)
 
 **Operational Systems**
