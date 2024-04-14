@@ -30,6 +30,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![LibreNMS](https://img.shields.io/badge/-LibreNMS-333333?style=flat&logo=librenms)
 ![Metabase](https://img.shields.io/badge/-Metabase-333333?style=flat&logo=metabase)
 ![NetBox](https://img.shields.io/badge/-NetBox-333333?style=flat&logo=netbox)
+![NetworkWeathermap](https://img.shields.io/badge/-Network%20Weathermap-333333?style=flat&logo=networkweathermap)
 ![Oxidized](https://img.shields.io/badge/-Oxidized-333333?style=flat&logo=oxidized)
 ![phpIPAM](https://img.shields.io/badge/-phpIPAM-333333?style=flat&logo=phpIPAM)
 ![RRDReST](https://img.shields.io/badge/-RRDReST-333333?style=flat&logo=rrdrest)
@@ -37,6 +38,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![UNM2000](https://img.shields.io/badge/-UNM2000-333333?style=flat&logo=unm2000)
 ![Wanguard](https://img.shields.io/badge/-Wanguard-333333?style=flat&logo=wanguard)
 ![Zabbix](https://img.shields.io/badge/-Zabbix-333333?style=flat&logo=zabbix)
+
 
 **Network Vendor**
 
