@@ -91,10 +91,3 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Termius](https://img.shields.io/badge/-Termius-333333?style=flat&logo=termius)
 ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC)
 ![WinBox](https://img.shields.io/badge/-WinBox-333333?style=flat&logo=mikroTik)
-
-
-##
-
-###  Contributions
-
-LibreNMS Project: [LibreNMS](https://github.com/librenms/librenms/commits?author=santiag0z) [Docker](https://github.com/librenms/docker/commits?author=santiag0z)
