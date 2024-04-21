@@ -98,6 +98,3 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ###  Contributions
 
 LibreNMS Project: [LibreNMS](https://github.com/librenms/librenms/commits?author=santiag0z) [Docker](https://github.com/librenms/docker/commits?author=santiag0z)
-
-##
-![Snake animation](https://github.com/santiag0z/santiag0z/blob/output/github-contribution-grid-snake.svg)
