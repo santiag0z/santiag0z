@@ -57,6 +57,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Draw.io](https://img.shields.io/badge/-Draw.io-333333?style=flat&logo=diagramsdotnet)
 ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)
+![Graphviz](https://img.shields.io/badge/-Graphviz-333333?style=flat&logo=graphviz)
 ![JSON](https://img.shields.io/badge/-JSON-333333?style=flat&logo=json)
 ![MariaDB](https://img.shields.io/badge/-MariaDB-333333?style=flat&logo=mariadb)
 ![Markdown](https://img.shields.io/badge/-Markdown-333333?style=flat&logo=Markdown)
