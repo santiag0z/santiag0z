@@ -4,7 +4,7 @@
 
 ### Hi, 
 
-I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (Internet Service Provider), and manage o [AS-263327](https://as263327.peeringdb.com/) and [AS-264221](https://as22503.peeringdb.com/).
+I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (Internet Service Provider), and manage o [AS-263327](https://as263327.peeringdb.com/) and [AS-264221](https://as264221.peeringdb.com/).
 
 <p align="left">
   <a href="https://www.linkedin.com/in/santiago-z/" title="LinkedIn">
