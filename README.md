@@ -48,6 +48,8 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Huawei](https://img.shields.io/badge/-Huawei-333333?style=flat&logo=huawei)
 ![junipernetworks](https://img.shields.io/badge/-Juniper%20Networks-333333?style=flat&logo=junipernetworks)
 ![MikroTik](https://img.shields.io/badge/-MikroTik-333333?style=flat&logo=mikroTik)
+![ZTE](https://img.shields.io/badge/-ZTE-333333?style=flat&logo=zte)
+
 
 **Operation**
 
@@ -63,6 +65,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Markdown](https://img.shields.io/badge/-Markdown-333333?style=flat&logo=Markdown)
 ![Mermaid](https://img.shields.io/badge/-Mermaid-333333?style=flat&logo=mermaid)
 ![Nginx](https://img.shields.io/badge/-Nginx-333333?style=flat&logo=nginx)
+![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
 ![RRDTool](https://img.shields.io/badge/-RRDTool-333333?style=flat&logo=rrdtool)
 ![Vagrant](https://img.shields.io/badge/-Vagrant-333333?style=flat&logo=vagrant)
 ![YAML](https://img.shields.io/badge/-YAML-333333?style=flat&logo=yaml)
@@ -74,7 +77,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![macos](https://img.shields.io/badge/-macOS-333333?style=flat&logo=macos)
 ![Raspberry Pi](https://img.shields.io/badge/-Raspberry%20Pi-333333?style=flat&logo=raspberrypi)
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-333333?style=flat&logo=ubuntu)
-![windows](https://img.shields.io/badge/-Windows-333333?style=flat&logo=windows)
+![Windows](https://img.shields.io/badge/-Windows-333333?style=flat&logo=windows)
 
 **Utilities**
 
@@ -85,6 +88,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 ![Homebrew](https://img.shields.io/badge/-Homebrew-333333?style=flat&logo=homebrew)
 ![MkDocs](https://img.shields.io/badge/-MkDocs-333333?style=flat&logo=Markdown)
 ![Notion](https://img.shields.io/badge/-Notion-333333?style=flat&logo=notion)
+![Obsidian](https://img.shields.io/badge/-Obsidian-333333?style=flat&logo=Obsidian)
 ![Postman](https://img.shields.io/badge/-Postman-333333?style=flat&logo=postman)
 ![RouterSploit](https://img.shields.io/badge/-RouterSploit-333333?style=flat&logo=routersploit)
 ![Termius](https://img.shields.io/badge/-Termius-333333?style=flat&logo=termius)
