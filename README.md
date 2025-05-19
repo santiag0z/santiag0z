@@ -2,7 +2,7 @@
   <img src="https://avatars.githubusercontent.com/u/34222550?v=4" alt="Santiago.Z" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
 </p>
 
-##
+---
 
 <img align='right' src="https://github-readme-stats.vercel.app/api?username=santiag0z&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
 
@@ -18,7 +18,7 @@ I work as a Network Analyst at [Online Telecom](https://onlinetelecom.com.br/) (
 </p>
 
 
-##
+---
 
 ###  Skills
 
