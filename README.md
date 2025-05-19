@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/34222550?v=4" alt="Santiago.Z" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+</p>
+
+##
+
 <img align='right' src="https://github-readme-stats.vercel.app/api?username=santiag0z&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
 
 <img src="https://img.shields.io/static/v1?label=Overview&message=Santiago.Z&color=f8efd4&style=for-the-badge&logo=GitHub" alt="Static GitHub">
