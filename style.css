@@ -12,6 +12,8 @@
   --dracula-purple: #bd93f9;
   --dracula-red: #ff5555;
   --dracula-yellow: #f1fa8c;
+  /* New variable for the darker background, same as experience section */
+  --dracula-darker-background: #21222c;
 }
 
 /* Estilos Globais */
@@ -122,18 +124,24 @@ a:hover {
   background-color: var(
     --dracula-current-line
   ); /* Using current-line for consistency */
+  padding-top: 5rem; /* Adicionado para padding superior */
+  padding-bottom: 5rem; /* Adicionado para padding inferior */
 }
 
 .experience-full-width-section {
   background-color: var(
-    --dracula-background
-  ); /* Using background for consistency */
+    --dracula-darker-background
+  ); /* Using new darker background variable */
+  padding-top: 5rem; /* Adicionado para padding superior */
+  padding-bottom: 5rem; /* Adicionado para padding inferior */
 }
 
 .projects-full-width-section {
   background-color: var(
     --dracula-current-line
-  ); /* Using current-line for consistency */
+  ); /* Original background for projects */
+  padding-top: 5rem; /* Adicionado para padding superior */
+  padding-bottom: 5rem; /* Adicionado para padding inferior */
 }
 
 /* Seções de Conteúdo (Formação, Experiência, Projetos, Habilidades) */
@@ -409,8 +417,8 @@ section h2 {
 /* === Estilos para a Seção de Habilidades (Skills) === */
 .skills-section {
   background-color: var(
-    --dracula-current-line
-  ); /* Consistent with other section backgrounds */
+    --dracula-darker-background
+  ); /* Changed to match experience background */
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
