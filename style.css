@@ -419,3 +419,39 @@ section h2 {
   background-color: #bd93f9; /* $dracula-purple */
   border-color: #bd93f9;
 }
+/* Estilo para os cards de Habilidades */
+.skills-card {
+  background-color: #282a36; /* Cor de fundo mais escura para o card */
+  color: #f8f8f2; /* Cor do texto principal */
+  border: 1px solid #6272a4; /* Borda sutil */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+  transition: transform 0.2s ease-in-out; /* Transição para efeito hover */
+}
+
+.skills-card:hover {
+  transform: translateY(-5px); /* Efeito de levantar no hover */
+}
+
+.skills-card .card-title {
+  color: #bd93f9; /* Cor do título da categoria (roxo Dracula) */
+  font-weight: bold;
+  border-bottom: 1px solid #44475a; /* Linha de separação abaixo do título */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Remove qualquer estilo de lista padrão, se ainda tiver */
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  margin: 5px; /* Adiciona espaçamento entre os badges */
+}
+
+.list-inline-item img {
+  height: 25px; /* Ajusta a altura dos badges para um tamanho uniforme */
+  vertical-align: middle; /* Alinha verticalmente os badges */
+}
