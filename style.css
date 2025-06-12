@@ -40,6 +40,7 @@ body {
 }
 
 /* Itens de Lista (usado em Habilidades) */
+/* Este estilo pode ser removido se não estiver usando list-group-item na seção de Habilidades */
 .list-group-item {
   background-color: #44475a; /* $dracula-current-line */
   color: #f8f8f2; /* $dracula-foreground */
@@ -61,7 +62,7 @@ a:hover {
   background-color: #50fa7b; /* $dracula-green */
 }
 
-/* Badges de Habilidades */
+/* Badges de Habilidades (usado em alguns contextos, verificar uso) */
 .skill-badge {
   margin: 5px;
   background-color: #6272a4 !important; /* $dracula-comment */
@@ -419,39 +420,65 @@ section h2 {
   background-color: #bd93f9; /* $dracula-purple */
   border-color: #bd93f9;
 }
-/* Estilo para os cards de Habilidades */
-.skills-card {
-  background-color: #282a36; /* Cor de fundo mais escura para o card */
-  color: #f8f8f2; /* Cor do texto principal */
-  border: 1px solid #6272a4; /* Borda sutil */
-  border-radius: 8px; /* Cantos arredondados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
-  transition: transform 0.2s ease-in-out; /* Transição para efeito hover */
+
+/* === Estilos para a Seção de Habilidades (Skills) === */
+.skills-section {
+  background-color: #2e303c; /* lighten($dracula-background, 5%) */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
 }
 
-.skills-card:hover {
-  transform: translateY(-5px); /* Efeito de levantar no hover */
+/* Estilo dos botões de filtro na seção de habilidades */
+.skills-section .button-group .btn {
+  border-color: #8be9fd; /* $dracula-cyan */
+  color: #8be9fd; /* $dracula-cyan */
+  background-color: transparent; /* Certifica que não tem fundo padrão do Bootstrap */
+  transition: all 0.3s ease;
 }
 
-.skills-card .card-title {
-  color: #bd93f9; /* Cor do título da categoria (roxo Dracula) */
-  font-weight: bold;
-  border-bottom: 1px solid #44475a; /* Linha de separação abaixo do título */
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+.skills-section .button-group .btn.active {
+  background-color: #8be9fd; /* $dracula-cyan */
+  color: #282a36; /* $dracula-background */
+  border-color: #8be9fd;
 }
 
-/* Remove qualquer estilo de lista padrão, se ainda tiver */
-.list-inline {
-  padding-left: 0;
-  list-style: none;
+.skills-section .button-group .btn:hover:not(.active) {
+  background-color: rgba(
+    139,
+    233,
+    253,
+    0.2
+  ); /* $dracula-cyan com transparência */
+  color: #8be9fd;
 }
 
-.list-inline-item {
-  margin: 5px; /* Adiciona espaçamento entre os badges */
+/* Estilo para os badges de habilidade */
+.skill-item img {
+  /* Alterado para img dentro de skill-item para ser mais específico */
+  transition: transform 0.2s ease-in-out;
+  padding: 5px;
+  background-color: #44475a; /* $dracula-current-line */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 30px; /* Ajuste para ter um tamanho mais padrão se necessário */
+  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
 }
 
-.list-inline-item img {
-  height: 25px; /* Ajusta a altura dos badges para um tamanho uniforme */
-  vertical-align: middle; /* Alinha verticalmente os badges */
+.skill-item img:hover {
+  transform: translateY(-5px); /* Efeito de levitar no hover */
+}
+
+.skill-item {
+  display: block; /* Garante que o item seja exibido como bloco para o JavaScript */
+  text-align: center; /* Centraliza a imagem do badge */
+}
+
+/* Ajustes de responsividade para os botões de filtro */
+@media (max-width: 576px) {
+  .button-group .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
