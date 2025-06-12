@@ -482,3 +482,13 @@ section h2 {
     margin: 5px 0;
   }
 }
+
+/* No seu style.css, adicione algo como: */
+.divider-line {
+  border: 0;
+  height: 2px; /* Espessura da linha */
+  background-color: #6272a4; /* $dracula-comment ou outra cor da paleta */
+  margin-top: 3rem; /* Margem superior */
+  margin-bottom: 3rem; /* Margem inferior */
+  opacity: 0.5; /* Torna a linha um pouco transparente */
+}
