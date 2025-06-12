@@ -1,78 +1,66 @@
-/* Variáveis de Cores (Paleta Dracula) */
-/* Estas variáveis não são diretamente usadas em CSS puro, mas servem como referência de onde as cores vieram. */
-/* $dracula-background: #282a36; */
-/* $dracula-current-line: #44475a; */
-/* $dracula-selection: #44475a; */
-/* $dracula-foreground: #f8f8f2; */
-/* $dracula-comment: #6272a4; */
-/* $dracula-cyan: #8be9fd; */
-/* $dracula-green: #50fa7b; */
-/* $dracula-orange: #ffb86c; */
-/* $dracula-pink: #ff79c6; */
-/* $dracula-purple: #bd93f9; */
-/* $dracula-red: #ff5555; */
-/* $dracula-yellow: #f1fa8c; */
+/* CSS Custom Properties (Variables) for Dracula Palette */
+:root {
+  --dracula-background: #282a36;
+  --dracula-current-line: #44475a;
+  --dracula-selection: #44475a;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+}
 
 /* Estilos Globais */
 body {
-  background-color: #282a36; /* $dracula-background */
-  color: #f8f8f2; /* $dracula-foreground */
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
 }
 
 /* Navbar e Footer */
 .navbar,
 .footer {
-  background-color: #2e303c; /* lighten($dracula-background, 5%) */
+  background-color: var(
+    --dracula-current-line
+  ); /* Adjusted to match current-line shade */
 }
 
 /* Cards Genéricos */
 .card {
-  background-color: #44475a; /* $dracula-current-line */
-  color: #f8f8f2; /* $dracula-foreground */
-  border: 1px solid #6272a4; /* $dracula-comment */
+  background-color: var(--dracula-current-line);
+  color: var(--dracula-foreground);
+  border: 1px solid var(--dracula-comment);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card .card-header,
 .card .card-footer {
-  background-color: #44475a; /* $dracula-selection */
-}
-
-/* Itens de Lista (usado em Habilidades) */
-/* Este estilo pode ser removido se não estiver usando list-group-item na seção de Habilidades */
-.list-group-item {
-  background-color: #44475a; /* $dracula-current-line */
-  color: #f8f8f2; /* $dracula-foreground */
-  border-color: #6272a4; /* $dracula-comment */
+  background-color: var(--dracula-selection);
 }
 
 /* Links */
 a {
-  color: #8be9fd; /* $dracula-cyan */
+  color: var(--dracula-cyan);
   text-decoration: none;
 }
 
 a:hover {
-  color: #bd93f9; /* $dracula-purple */
+  color: var(--dracula-purple);
 }
 
 /* Barras de Progresso (se houver) */
 .progress-bar {
-  background-color: #50fa7b; /* $dracula-green */
-}
-
-/* Badges de Habilidades (usado em alguns contextos, verificar uso) */
-.skill-badge {
-  margin: 5px;
-  background-color: #6272a4 !important; /* $dracula-comment */
-  color: #f8f8f2 !important; /* $dracula-foreground */
+  background-color: var(--dracula-green);
 }
 
 /* Seção Hero */
 .profile-hero {
   min-height: 70vh;
-  background-color: #282a36; /* $dracula-background */
+  background-color: var(--dracula-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +74,7 @@ a:hover {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #ff79c6; /* $dracula-pink */
+  border: 3px solid var(--dracula-pink);
 }
 
 .profile-hero .profile-name-hero {
@@ -94,35 +82,31 @@ a:hover {
   font-weight: 700;
   margin-top: 25px;
   margin-bottom: 10px;
-  color: #f8f8f2; /* $dracula-foreground */
+  color: var(--dracula-foreground);
 }
 
 .profile-hero .profile-description-hero {
   font-size: 1.3rem;
-  color: #f1fa8c; /* $dracula-yellow */
+  color: var(--dracula-yellow);
   margin-bottom: 30px;
 }
 
 .profile-hero .hero-about-text {
   font-size: 1.1rem;
-  color: #bd93f9; /* $dracula-purple */
+  color: var(--dracula-purple);
   line-height: 1.6;
   margin-bottom: 20px;
+  max-width: 650px; /* Moved from inline style */
 }
 
 .profile-hero .social-icons-hero a {
-  color: #f8f8f2; /* $dracula-foreground */
+  color: var(--dracula-foreground);
   margin: 0 15px;
   transition: color 0.3s ease;
 }
 
 .profile-hero .social-icons-hero a:hover {
-  color: #ff79c6; /* $dracula-pink */
-}
-
-/* Ajustes para o conteúdo principal abaixo do hero */
-.container.mt-5 {
-  padding-top: 0 !important;
+  color: var(--dracula-pink);
 }
 
 /* Navbar fixa */
@@ -133,64 +117,56 @@ a:hover {
   z-index: 1030;
 }
 
-/* Remove seções de perfil antigas (se existirem no HTML) */
-.profile-section,
-.profile-img,
-.profile-name,
-.profile-username,
-.profile-info,
-.profile-stats {
-  display: none;
-}
-
-/* Seções com largura total base */
-.full-width-section {
-  margin-bottom: 4rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  border-radius: 0;
-}
-
 /* Divs externas para seções com largura total e backgrounds alternados */
 .education-full-width-section {
-  background-color: #2e303c; /* Um tom ligeiramente mais claro que o fundo principal */
-  /* Herda outras propriedades de .full-width-section */
+  background-color: var(
+    --dracula-current-line
+  ); /* Using current-line for consistency */
 }
 
 .experience-full-width-section {
-  /* NOVA CLASSE PARA EXPERIÊNCIA */
-  background-color: #21222c; /* Um tom mais escuro que o background principal */
-  /* Herda outras propriedades de .full-width-section */
+  background-color: var(
+    --dracula-background
+  ); /* Using background for consistency */
 }
 
 .projects-full-width-section {
-  background-color: #282a36; /* A cor do background principal */
-  /* Herda outras propriedades de .full-width-section */
+  background-color: var(
+    --dracula-current-line
+  ); /* Using current-line for consistency */
 }
 
 /* Seções de Conteúdo (Formação, Experiência, Projetos, Habilidades) */
 section h2 {
   font-size: 2.5rem;
-  color: #bd93f9; /* $dracula-purple */
+  color: var(--dracula-purple);
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-#education {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border-radius: 0;
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 2rem; /* Smaller font size for headings on smaller screens */
+  }
+  .profile-hero .profile-name-hero {
+    font-size: 2.5rem; /* Smaller font size for hero name on smaller screens */
+  }
+  .profile-hero .profile-description-hero {
+    font-size: 1rem; /* Smaller font size for hero description on smaller screens */
+  }
+  .profile-hero .hero-about-text {
+    font-size: 0.95rem; /* Smaller font size for hero about text on smaller screens */
+  }
 }
 
 #education .education-card {
-  background-color: #44475a; /* $dracula-current-line */
+  background-color: var(--dracula-current-line);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 20px;
   align-items: center;
-  border: 1px solid #6272a4; /* $dracula-comment */
+  border: 1px solid var(--dracula-comment);
 }
 
 #education .education-card .education-img-container {
@@ -199,11 +175,13 @@ section h2 {
   height: 120px;
   overflow: hidden;
   border-radius: 8px;
-  border: 2px solid #50fa7b; /* $dracula-green */
+  border: 2px solid var(--dracula-green);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2e303c; /* lighten($dracula-background, 5%) */
+  background-color: var(
+    --dracula-current-line
+  ); /* Consistent with card background */
 }
 
 #education .education-card .education-img {
@@ -218,19 +196,19 @@ section h2 {
 
 #education .education-card .education-title {
   font-size: 1.5rem;
-  color: #f8f8f2; /* $dracula-foreground */
+  color: var(--dracula-foreground);
   margin-bottom: 5px;
 }
 
 #education .education-card .education-subtitle {
   font-size: 1.1rem;
-  color: #ffb86c; /* $dracula-orange */
+  color: var(--dracula-orange);
   margin-bottom: 5px;
 }
 
 #education .education-card .education-year {
   font-size: 0.9rem;
-  color: #8be9fd; /* $dracula-cyan */
+  color: var(--dracula-cyan);
   font-weight: bold;
 }
 
@@ -248,7 +226,7 @@ section h2 {
   bottom: 0;
   left: 50%;
   width: 4px;
-  background-color: #6272a4; /* $dracula-comment */
+  background-color: var(--dracula-comment);
   margin-left: -2px;
   z-index: 0;
 }
@@ -262,12 +240,10 @@ section h2 {
 }
 
 .timeline-item:nth-child(even) {
-  /* Itens pares à esquerda */
   justify-content: flex-start;
 }
 
 .timeline-item:nth-child(odd) {
-  /* Itens ímpares à direita */
   justify-content: flex-end;
 }
 
@@ -277,25 +253,25 @@ section h2 {
   transform: translateX(-50%);
   width: 40px;
   height: 40px;
-  background-color: #ff79c6; /* $dracula-pink */
+  background-color: var(--dracula-pink);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #282a36; /* $dracula-background */
+  color: var(--dracula-background);
   font-size: 1.2rem;
   z-index: 1;
-  border: 3px solid #6272a4; /* $dracula-comment */
+  border: 3px solid var(--dracula-comment);
 }
 
 .timeline-item .timeline-content {
   width: 45%;
   padding: 20px;
-  background-color: #44475a; /* $dracula-current-line */
+  background-color: var(--dracula-current-line);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
-  border: 1px solid #6272a4; /* $dracula-comment */
+  border: 1px solid var(--dracula-comment);
 }
 
 .timeline-item .timeline-content::after {
@@ -315,7 +291,7 @@ section h2 {
 
 .timeline-item:nth-child(even) .timeline-content::after {
   right: -10px;
-  border-left: 10px solid #44475a; /* $dracula-current-line */
+  border-left: 10px solid var(--dracula-current-line);
 }
 
 /* Seta para itens à esquerda da linha (conteúdo à direita) */
@@ -325,14 +301,23 @@ section h2 {
 
 .timeline-item:nth-child(odd) .timeline-content::after {
   left: -10px;
-  border-right: 10px solid #44475a; /* $dracula-current-line */
+  border-right: 10px solid var(--dracula-current-line);
 }
 
 .timeline-item .timeline-dates {
   font-size: 0.9rem;
-  color: #f1fa8c; /* $dracula-yellow */
+  color: var(--dracula-yellow);
   margin-bottom: 10px;
   font-weight: bold;
+}
+
+/* Custom divider for timeline */
+.timeline-divider {
+  border: 0;
+  height: 1px;
+  background-color: var(--dracula-comment);
+  opacity: 0.7;
+  margin: 15px 0; /* Adjusted margins */
 }
 
 /* Responsividade para a Linha do Tempo */
@@ -362,16 +347,16 @@ section h2 {
   .timeline-item .timeline-content::after {
     left: -10px !important;
     right: auto !important;
-    border-right: 10px solid #44475a !important;
+    border-right: 10px solid var(--dracula-current-line) !important;
     border-left: none !important;
   }
 }
 
 /* Estilos para a seção de Projetos */
 #projects .btn-primary {
-  background-color: #50fa7b; /* $dracula-green */
-  border-color: #50fa7b;
-  color: #282a36; /* $dracula-background */
+  background-color: var(--dracula-green);
+  border-color: var(--dracula-green);
+  color: var(--dracula-background);
 }
 
 #projects .btn-primary:hover {
@@ -379,9 +364,9 @@ section h2 {
 }
 
 #projects .btn-secondary {
-  background-color: #6272a4; /* $dracula-comment */
-  border-color: #6272a4;
-  color: #f8f8f2; /* $dracula-foreground */
+  background-color: var(--dracula-comment);
+  border-color: var(--dracula-comment);
+  color: var(--dracula-foreground);
 }
 
 #projects .btn-secondary:hover {
@@ -389,41 +374,43 @@ section h2 {
 }
 
 #projects .project-card .card {
-  background-color: #44475a; /* $dracula-current-line */
-  border: 1px solid #6272a4; /* $dracula-comment */
+  background-color: var(--dracula-current-line);
+  border: 1px solid var(--dracula-comment);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #projects .project-card .card-title {
-  color: #f8f8f2; /* $dracula-foreground */
+  color: var(--dracula-foreground);
   font-size: 1.4rem;
 }
 
 #projects .project-card .card-subtitle {
-  color: #ffb86c; /* $dracula-orange */
+  color: var(--dracula-orange);
   font-size: 1rem;
 }
 
 #projects .project-card .card-text {
-  color: #f8f8f2; /* $dracula-foreground */
+  color: var(--dracula-foreground);
   font-size: 0.95rem;
 }
 
 #projects .project-card .project-links .btn-info {
-  background-color: #8be9fd; /* $dracula-cyan */
-  border-color: #8be9fd;
-  color: #282a36; /* $dracula-background */
+  background-color: var(--dracula-cyan);
+  border-color: var(--dracula-cyan);
+  color: var(--dracula-background);
 }
 
 #projects .project-card .project-links .btn-info:hover {
-  background-color: #bd93f9; /* $dracula-purple */
-  border-color: #bd93f9;
+  background-color: var(--dracula-purple);
+  border-color: var(--dracula-purple);
 }
 
 /* === Estilos para a Seção de Habilidades (Skills) === */
 .skills-section {
-  background-color: #2e303c; /* lighten($dracula-background, 5%) */
+  background-color: var(
+    --dracula-current-line
+  ); /* Consistent with other section backgrounds */
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -432,47 +419,47 @@ section h2 {
 
 /* Estilo dos botões de filtro na seção de habilidades */
 .skills-section .button-group .btn {
-  border-color: #8be9fd; /* $dracula-cyan */
-  color: #8be9fd; /* $dracula-cyan */
-  background-color: transparent; /* Certifica que não tem fundo padrão do Bootstrap */
+  border-color: var(--dracula-cyan);
+  color: var(--dracula-cyan);
+  background-color: transparent;
   transition: all 0.3s ease;
 }
 
 .skills-section .button-group .btn.active {
-  background-color: #8be9fd; /* $dracula-cyan */
-  color: #282a36; /* $dracula-background */
-  border-color: #8be9fd;
+  background-color: var(--dracula-cyan);
+  color: var(--dracula-background);
+  border-color: var(--dracula-cyan);
 }
 
 .skills-section .button-group .btn:hover:not(.active) {
-  background-color: rgba(
-    139,
-    233,
-    253,
-    0.2
-  ); /* $dracula-cyan com transparência */
-  color: #8be9fd;
+  background-color: color-mix(
+    in srgb,
+    var(--dracula-cyan) 20%,
+    transparent
+  ); /* Using color-mix for transparency */
+  color: var(--dracula-cyan);
 }
 
 /* Estilo para os badges de habilidade */
 .skill-item img {
-  /* Alterado para img dentro de skill-item para ser mais específico */
   transition: transform 0.2s ease-in-out;
   padding: 5px;
-  background-color: #44475a; /* $dracula-current-line */
+  background-color: var(
+    --dracula-current-line
+  ); /* Consistent with card background */
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 30px; /* Ajuste para ter um tamanho mais padrão se necessário */
-  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+  height: 30px;
+  object-fit: contain;
 }
 
 .skill-item img:hover {
-  transform: translateY(-5px); /* Efeito de levitar no hover */
+  transform: translateY(-5px);
 }
 
 .skill-item {
-  display: block; /* Garante que o item seja exibido como bloco para o JavaScript */
-  text-align: center; /* Centraliza a imagem do badge */
+  display: block;
+  text-align: center;
 }
 
 /* Ajustes de responsividade para os botões de filtro */
@@ -481,14 +468,4 @@ section h2 {
     width: 100%;
     margin: 5px 0;
   }
-}
-
-/* No seu style.css, adicione algo como: */
-.divider-line {
-  border: 0;
-  height: 2px; /* Espessura da linha */
-  background-color: #6272a4; /* $dracula-comment ou outra cor da paleta */
-  margin-top: 3rem; /* Margem superior */
-  margin-bottom: 3rem; /* Margem inferior */
-  opacity: 0.5; /* Torna a linha um pouco transparente */
 }
