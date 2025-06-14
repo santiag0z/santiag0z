@@ -434,34 +434,6 @@
 
         // Trigger click on 'Todos' button for projects by default
         document.querySelector('#projects button[data-filter="all"]').click();
-
-        // Skill filter logic
-        const skillFilterButtons = document.querySelectorAll(
-          "#skills .btn[data-filter]"
-        );
-        const skillItems = document.querySelectorAll(
-          "#skills-container .skill-item"
-        );
-
-        skillFilterButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            skillFilterButtons.forEach((btn) => btn.classList.remove("active"));
-            this.classList.add("active");
-
-            const filter = this.dataset.filter;
-
-            skillItems.forEach((item) => {
-              if (filter === "all" || item.dataset.category === filter) {
-                item.style.display = "block";
-              } else {
-                item.style.display = "none";
-              }
-            });
-          });
-        });
-
-        // Trigger click on 'Todas' button for skills by default
-        document.querySelector('#skills .btn[data-filter="all"]').click();
       });
     </script>
   </body>
