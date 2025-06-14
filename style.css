@@ -1,18 +1,18 @@
 /* Custom Properties (Variables) para o novo tema */
 :root {
   /* Cores Base */
-  --theme-background-dark: #1a1a1a; /* Preto bem escuro para o fundo principal */
-  --theme-dark-gray: #2c2c2c; /* Cinza escuro para seções e cards */
+  --theme-background-dark: #000049; /* Azul marinho muito escuro, quase preto */
+  --theme-dark-gray: #4b414c; /* Cinza escuro/roxo acinzentado para seções e cards */
   --theme-text-light: #e0e0e0; /* Texto claro para contraste */
   --theme-text-muted: #a0a0a0; /* Texto mais suave, para detalhes */
 
   /* Cores de Destaque */
-  --theme-primary-purple: #8a2be2; /* Roxo vibrante para primário/destaque */
-  --theme-secondary-violet: #6a0dad; /* Violeta mais escuro para secundário */
-  --theme-accent-blue: #00bfff; /* Azul claro (DeepSkyBlue) para acentos */
-  --theme-accent-cyan: #00ffff; /* Ciano para outros detalhes */
+  --theme-primary-purple: #8a2be2; /* Roxo vibrante para primário/destaque (mantido) */
+  --theme-secondary-violet: #6a0dad; /* Violeta mais escuro para secundário (mantido) */
+  --theme-accent-blue: #00bfff; /* Azul claro (DeepSkyBlue) para acentos (mantido) */
+  --theme-accent-cyan: #00ffff; /* Ciano para outros detalhes (mantido) */
 
-  /* Coores para elementos específicos (botões, links, etc.) */
+  /* Cores para elementos específicos (botões, links, etc.) */
   --theme-button-primary-bg: var(--theme-primary-purple);
   --theme-button-primary-text: var(--theme-text-light);
   --theme-button-secondary-bg: var(--theme-dark-gray);
@@ -20,25 +20,27 @@
   --theme-button-secondary-text: var(--theme-text-light);
   --theme-link-color: var(--theme-accent-cyan);
   --theme-link-hover-color: var(--theme-accent-blue);
-  --theme-border-color: #444444; /* Borda sutil */
+  --theme-border-color: #615a6b; /* Uma cor de borda que harmonize com #4b414c */
 }
 
 /* Estilos Globais */
 body {
   background-color: var(--theme-background-dark);
   color: var(--theme-text-light);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte um pouco mais moderna */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navbar e Footer */
 .navbar,
 .footer {
-  background-color: var(--theme-dark-gray);
-  border-bottom: 1px solid var(--theme-border-color); /* Uma borda sutil */
+  background-color: var(
+    --theme-background-dark
+  ); /* Usando o azul marinho bem escuro */
+  border-bottom: 1px solid var(--theme-border-color);
 }
 
 .navbar-brand {
-  color: var(--theme-primary-purple) !important; /* Cor do logo, se houver texto */
+  color: var(--theme-primary-purple) !important;
   font-weight: bold;
 }
 
@@ -53,16 +55,16 @@ body {
 
 /* Cards Genéricos */
 .card {
-  background-color: var(--theme-dark-gray);
+  background-color: var(--theme-dark-gray); /* Fundo dos cards */
   color: var(--theme-text-light);
   border: 1px solid var(--theme-border-color);
-  border-radius: 8px; /* Cantos um pouco mais arredondados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra mais intensa para destacar do fundo */
 }
 
 .card .card-header,
 .card .card-footer {
-  background-color: var(--theme-background-dark); /* Mais escuro para header/footer do card */
+  background-color: var(--theme-background-dark);
   border-bottom: 1px solid var(--theme-border-color);
 }
 
@@ -74,7 +76,7 @@ a {
 
 a:hover {
   color: var(--theme-link-hover-color);
-  text-decoration: underline; /* Adiciona sublinhado no hover para clareza */
+  text-decoration: underline;
 }
 
 /* Barras de Progresso (se houver) */
@@ -99,8 +101,8 @@ a:hover {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid var(--theme-primary-purple); /* Borda roxa de destaque */
-  box-shadow: 0 0 15px var(--theme-primary-purple); /* Efeito de brilho roxo */
+  border: 4px solid var(--theme-primary-purple);
+  box-shadow: 0 0 15px var(--theme-primary-purple);
 }
 
 .profile-hero .profile-name-hero {
@@ -109,12 +111,12 @@ a:hover {
   margin-top: 25px;
   margin-bottom: 10px;
   color: var(--theme-text-light);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para o texto do nome */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .profile-hero .profile-description-hero {
   font-size: 1.3rem;
-  color: var(--theme-accent-cyan); /* Ciano para a descrição */
+  color: var(--theme-accent-cyan);
   margin-bottom: 30px;
 }
 
@@ -124,13 +126,12 @@ a:hover {
   line-height: 1.6;
   margin-bottom: 20px;
   max-width: 650px;
-  text-align: justify; /* Justificado para uma leitura mais formal */
+  text-align: justify;
 }
 
 .profile-hero .hero-about-text strong {
-  color: var(--theme-primary-purple); /* Destaque em roxo para strong */
+  color: var(--theme-primary-purple);
 }
-
 
 .profile-hero .social-icons-hero a {
   color: var(--theme-text-light);
@@ -139,8 +140,8 @@ a:hover {
 }
 
 .profile-hero .social-icons-hero a:hover {
-  color: var(--theme-primary-purple); /* Roxo no hover */
-  transform: translateY(-5px); /* Pequeno efeito de elevação */
+  color: var(--theme-primary-purple);
+  transform: translateY(-5px);
 }
 
 /* Navbar fixa */
@@ -153,33 +154,34 @@ a:hover {
 
 /* Divs externas para seções com largura total e backgrounds alternados */
 .education-full-width-section {
-  background-color: var(--theme-dark-gray);
-  padding: 5rem 0; /* Padding consistente */
+  background-color: var(--theme-dark-gray); /* #4b414c */
+  padding: 5rem 0;
 }
 
 .experience-full-width-section {
-  background-color: var(--theme-background-dark); /* Mais escuro */
+  background-color: var(--theme-background-dark); /* #000049 */
   padding: 5rem 0;
 }
 
 .projects-full-width-section {
-  background-color: var(--theme-dark-gray);
+  background-color: var(--theme-dark-gray); /* #4b414c */
   padding: 5rem 0;
 }
 
 /* Seções de Conteúdo (Formação, Experiência, Projetos, Habilidades) */
 section h2 {
   font-size: 2.5rem;
-  color: var(--theme-primary-purple); /* Roxo para títulos de seção */
+  color: var(--theme-primary-purple);
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  text-transform: uppercase; /* Mais impactante */
+  text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
-section h2 .fas, section h2 .fab {
-  color: var(--theme-accent-cyan); /* Ícones em ciano */
+section h2 .fas,
+section h2 .fab {
+  color: var(--theme-accent-cyan);
 }
 
 @media (max-width: 768px) {
@@ -198,7 +200,9 @@ section h2 .fas, section h2 .fab {
 }
 
 #education .education-card {
-  background-color: var(--theme-background-dark); /* Fundo mais escuro para cards de educação */
+  background-color: var(
+    --theme-background-dark
+  ); /* Fundo #000049 para cards de educação */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   padding: 20px;
@@ -212,11 +216,11 @@ section h2 .fas, section h2 .fab {
   height: 120px;
   overflow: hidden;
   border-radius: 8px;
-  border: 2px solid var(--theme-accent-blue); /* Borda azul */
+  border: 2px solid var(--theme-accent-blue);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--theme-dark-gray); /* Fundo para a imagem */
+  background-color: var(--theme-dark-gray); /* Fundo #4b414c para a imagem */
 }
 
 #education .education-card .education-img {
@@ -237,7 +241,7 @@ section h2 .fas, section h2 .fab {
 
 #education .education-card .education-subtitle {
   font-size: 1.1rem;
-  color: var(--theme-accent-cyan); /* Ciano para o subtítulo */
+  color: var(--theme-accent-cyan);
   margin-bottom: 5px;
 }
 
@@ -293,10 +297,10 @@ section h2 .fas, section h2 .fab {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--theme-text-light); /* Ícone no dot claro */
+  color: var(--theme-text-light);
   font-size: 1.2rem;
   z-index: 1;
-  border: 3px solid var(--theme-accent-cyan); /* Borda ciano no dot */
+  border: 3px solid var(--theme-accent-cyan);
 }
 
 .timeline-item .timeline-content {
@@ -304,7 +308,7 @@ section h2 .fas, section h2 .fab {
   padding: 20px;
   background-color: var(--theme-dark-gray); /* Fundo dos cards da timeline */
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   border: 1px solid var(--theme-border-color);
 }
@@ -340,7 +344,7 @@ section h2 .fas, section h2 .fab {
 }
 
 .timeline-item .card-title {
-  color: var(--theme-primary-purple); /* Título da empresa em roxo */
+  color: var(--theme-primary-purple);
 }
 
 .timeline-item .card-subtitle {
@@ -353,7 +357,7 @@ section h2 .fas, section h2 .fab {
 
 .timeline-item .timeline-dates {
   font-size: 0.9rem;
-  color: var(--theme-accent-cyan); /* Datas em ciano */
+  color: var(--theme-accent-cyan);
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -425,19 +429,21 @@ section h2 .fas, section h2 .fab {
 }
 
 #projects .project-card .card {
-  background-color: var(--theme-background-dark); /* Fundo escuro para cards de projetos */
+  background-color: var(
+    --theme-background-dark
+  ); /* Fundo #000049 para cards de projetos */
   border: 1px solid var(--theme-border-color);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #projects .project-card .card-title {
-  color: var(--theme-primary-purple); /* Título do projeto em roxo */
+  color: var(--theme-primary-purple);
   font-size: 1.4rem;
 }
 
 #projects .project-card .card-subtitle {
-  color: var(--theme-accent-cyan); /* Subtítulo em ciano */
+  color: var(--theme-accent-cyan);
   font-size: 1rem;
 }
 
@@ -447,23 +453,23 @@ section h2 .fas, section h2 .fab {
 }
 
 #projects .project-card .project-links .btn-info {
-  background-color: var(--theme-accent-blue); /* Botão de link em azul */
+  background-color: var(--theme-accent-blue);
   border-color: var(--theme-accent-blue);
   color: var(--theme-text-light);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 #projects .project-card .project-links .btn-info:hover {
-  background-color: var(--theme-secondary-violet); /* Violeta no hover */
+  background-color: var(--theme-secondary-violet);
   border-color: var(--theme-secondary-violet);
 }
 
 /* === Estilos para a Seção de Habilidades (Skills) === */
 .skills-section {
-  background-color: var(--theme-background-dark); /* Fundo escuro igual à experiência */
+  background-color: var(--theme-background-dark); /* Fundo #000049 */
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 3rem;
   border: 1px solid var(--theme-border-color);
 }
@@ -483,7 +489,7 @@ section h2 .fas, section h2 .fab {
 }
 
 .skills-section .button-group .btn:hover:not(.active) {
-  background-color: rgba(0, 255, 255, 0.2); /* Ciano com transparência */
+  background-color: rgba(0, 255, 255, 0.2);
   color: var(--theme-accent-cyan);
 }
 
@@ -491,17 +497,17 @@ section h2 .fas, section h2 .fab {
 .skill-item img {
   transition: transform 0.2s ease-in-out;
   padding: 5px;
-  background-color: var(--theme-dark-gray); /* Fundo dos badges */
+  background-color: var(--theme-dark-gray); /* Fundo #4b414c para os badges */
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra um pouco mais forte */
   height: 30px;
   object-fit: contain;
-  border: 1px solid var(--theme-border-color); /* Borda sutil nos badges */
+  border: 1px solid var(--theme-border-color);
 }
 
 .skill-item img:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3); /* Brilho ciano no hover */
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4); /* Brilho ciano no hover mais intenso */
 }
 
 .skill-item {
@@ -519,6 +525,7 @@ section h2 .fas, section h2 .fab {
 
 /* Footer */
 .footer {
+  background-color: var(--theme-background-dark); /* Fundo do footer */
   color: var(--theme-text-muted);
   font-size: 0.9rem;
 }
