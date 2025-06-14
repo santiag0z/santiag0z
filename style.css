@@ -505,14 +505,15 @@ section h2 .fab {
 }
 
 /* === Estilos para os Botões de Filtro de Projetos === */
-#projects .button-group .btn {
+/* Aumentando a especificidade para garantir a sobreposição do Bootstrap */
+#projects .button-group .btn-outline-primary {
   border-color: var(--terminal-accent-blue); /* Borda em azul elétrico */
   color: var(--terminal-accent-blue); /* Texto em azul elétrico */
   background-color: transparent; /* Fundo transparente */
   transition: all 0.3s ease;
 }
 
-#projects .button-group .btn.active {
+#projects .button-group .btn-outline-primary.active {
   background-color: var(
     --terminal-accent-green
   ); /* Fundo verde limão quando ativo */
@@ -523,7 +524,7 @@ section h2 .fab {
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Brilho verde */
 }
 
-#projects .button-group .btn:hover:not(.active) {
+#projects .button-group .btn-outline-primary:hover:not(.active) {
   background-color: rgba(
     0,
     255,
