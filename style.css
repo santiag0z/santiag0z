@@ -1,100 +1,162 @@
-/* Custom Properties (Variables) para o novo tema "Hacking Dark Enhanced" */
+/* Custom Properties (Variables) para o novo tema "Terminal Dark Mode" */
 :root {
   /* Cores Base */
-  --theme-background-dark: #1a1e26; /* Fundo principal bem escuro, quase preto-azulado */
-  --theme-medium-dark: #2a303d; /* Um cinza azulado escuro para seções e cards secundários */
-  --theme-text-light: #e0e0e0; /* Texto claro para bom contraste */
-  --theme-text-muted: #9fa6b2; /* Texto mais suave para detalhes e legendas */
+  --terminal-background: #121212; /* Preto muito escuro, fundo do terminal */
+  --terminal-surface: #1e1e1e; /* Um cinza muito escuro para painéis e cards */
+  --terminal-text-primary: #e0e0e0; /* Texto claro para leitura fácil */
+  --terminal-text-secondary: #a8a8a8; /* Texto secundário, comentários */
+  --terminal-border: #3a3a3a; /* Borda sutil para separar blocos */
 
-  /* Cores de Destaque */
-  --theme-primary-purple: #8e5bdc; /* Roxo vibrante para destaques, mais próximo do que aparece nas referências */
-  --theme-secondary-violet: #6b3fc2; /* Violeta mais escuro para hover de roxo */
-  --theme-accent-blue: #00bcd4; /* Azul turquesa para acentos, mais próximo do ciano nas imagens */
-  --theme-accent-cyan: #00ffff; /* Ciano puro para outros detalhes e links (mantido forte) */
-  --theme-highlight-green: #00e676; /* Um verde vibrante para progresso ou sucesso */
+  /* Cores de Destaque - como sintaxe de terminal */
+  --terminal-accent-green: #00ff00; /* Verde limão brilhante (para subtítulos, hover, destaques) */
+  --terminal-accent-blue: #00aaff; /* Azul elétrico (para TÍTULOS PRINCIPAIS, links, informações) */
+  --terminal-accent-purple: #8a2be2; /* Roxo profundo para elementos específicos (botões primários, etc.) */
+  --terminal-accent-yellow: #ffff00; /* Amarelo para avisos */
 
-  /* Cores para elementos específicos (botões, links, etc.) */
-  --theme-button-primary-bg: var(--theme-primary-purple);
-  --theme-button-primary-text: var(--theme-text-light);
-  --theme-button-secondary-bg: var(--theme-medium-dark);
-  --theme-button-secondary-border: var(--theme-text-muted);
-  --theme-button-secondary-text: var(--theme-text-light);
-  --theme-link-color: var(--theme-accent-cyan);
-  --theme-link-hover-color: var(--theme-accent-blue);
-  --theme-border-color: #3b4453; /* Uma cor de borda que harmonize com os novos tons */
+  /* Cores para elementos interativos */
+  --terminal-button-bg: var(--terminal-accent-purple); /* Botão primário roxo */
+  --terminal-button-text: var(--terminal-text-primary);
+  --terminal-link-color: var(--terminal-accent-blue);
+  --terminal-link-hover: var(--terminal-accent-green);
+  --terminal-input-border: var(--terminal-border);
+  --terminal-input-focus-border: var(--terminal-accent-blue);
 }
 
 /* Estilos Globais */
 body {
-  background-color: var(--theme-background-dark);
-  color: var(--theme-text-light);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--terminal-background);
+  color: var(--terminal-text-primary);
+  font-family: "Consolas", "Monaco", "Lucida Console", monospace; /* Fonte monospaceda para o toque de terminal */
+  line-height: 1.6;
+}
+
+/* Seleção de texto (simula seleção de terminal) */
+::selection {
+  background: var(--terminal-accent-blue);
+  color: var(--terminal-background);
 }
 
 /* Navbar e Footer */
 .navbar,
 .footer {
-  background-color: var(--theme-background-dark);
-  border-bottom: 1px solid var(--theme-border-color);
+  background-color: var(--terminal-surface);
+  border-bottom: 1px solid var(--terminal-border);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
-  color: var(--theme-primary-purple) !important;
+  color: var(--terminal-accent-green) !important; /* Marca em verde brilhante */
   font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
 
 .navbar-nav .nav-link {
-  color: var(--theme-text-light) !important;
-  transition: color 0.3s ease;
+  color: var(--terminal-text-primary) !important;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--theme-accent-cyan) !important;
+  color: var(--terminal-accent-blue) !important;
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.7);
 }
 
 /* Cards Genéricos */
 .card {
-  background-color: var(--theme-medium-dark); /* Fundo dos cards */
-  color: var(--theme-text-light);
-  border: 1px solid var(--theme-border-color);
-  border-radius: 8px; /* Cantos um pouco mais arredondados */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Sombra mais intensa para destacar */
+  background-color: var(--terminal-surface);
+  color: var(--terminal-text-primary);
+  border: 1px solid var(--terminal-border);
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .card .card-header,
 .card .card-footer {
-  background-color: var(
-    --theme-background-dark
-  ); /* Mais escuro para header/footer do card */
-  border-bottom: 1px solid var(--theme-border-color);
+  background-color: var(--terminal-background);
+  border-bottom: 1px solid var(--terminal-border);
+  font-weight: bold;
+  color: var(--terminal-accent-blue); /* Títulos de cabeçalho do card em azul */
+  padding: 0.75rem 1.25rem;
 }
 
 /* Links */
 a {
-  color: var(--theme-link-color);
+  color: var(--terminal-link-color);
   text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: var(--theme-link-hover-color);
+  color: var(--terminal-link-hover);
   text-decoration: underline;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
 
-/* Barras de Progresso (se houver) */
+/* Botões */
+.btn {
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--terminal-button-bg); /* Roxo */
+  border-color: var(--terminal-button-bg);
+  color: var(--terminal-button-text);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: var(--terminal-accent-purple);
+  border-color: var(--terminal-accent-purple);
+  box-shadow: 0 0 10px var(--terminal-accent-purple);
+}
+
+.btn-secondary {
+  background-color: var(--terminal-surface);
+  border-color: var(--terminal-border);
+  color: var(--terminal-text-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--terminal-border);
+  border-color: var(--terminal-accent-blue);
+  color: var(--terminal-accent-blue);
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+.btn-info {
+  /* Usado para links de projeto */
+  background-color: var(--terminal-accent-blue);
+  border-color: var(--terminal-accent-blue);
+  color: var(--terminal-button-text);
+}
+
+.btn-info:hover {
+  background-color: var(--terminal-link-hover); /* Verde no hover */
+  border-color: var(--terminal-link-hover);
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+}
+
+/* Barras de Progresso */
 .progress-bar {
-  background-color: var(--theme-highlight-green); /* Verde para progresso */
+  background-color: var(--terminal-accent-green);
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
 }
 
-/* Seção Hero */
+/* Seção Hero (o "prompt" inicial) */
 .profile-hero {
-  min-height: 70vh;
-  background-color: var(--theme-background-dark);
+  min-height: 80vh;
+  background-color: var(--terminal-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 70px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .profile-hero .profile-img-hero {
@@ -102,47 +164,64 @@ a:hover {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid var(--theme-primary-purple);
-  box-shadow: 0 0 20px var(--theme-primary-purple); /* Sombra mais destacada */
+  border: 4px solid var(--terminal-accent-green);
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+  filter: grayscale(20%);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-hero .profile-img-hero:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 255, 0, 1);
 }
 
 .profile-hero .profile-name-hero {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  color: var(--theme-text-light);
-  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8); /* Sombra de texto mais intensa */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--terminal-accent-blue); /* NOME PRINCIPAL EM AZUL ELÉTRICO */
+  text-shadow: 0 0 10px rgba(0, 170, 255, 0.8), 0 0 20px rgba(0, 170, 255, 0.4); /* Brilho neon azul */
+  letter-spacing: 2px;
 }
 
 .profile-hero .profile-description-hero {
-  font-size: 1.3rem;
-  color: var(--theme-accent-cyan);
-  margin-bottom: 30px;
+  font-size: 1.4rem;
+  color: var(--terminal-accent-green); /* Descrição em verde vibrante */
+  margin-bottom: 40px;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
 
 .profile-hero .hero-about-text {
   font-size: 1.1rem;
-  color: var(--theme-text-light);
-  line-height: 1.6;
-  margin-bottom: 20px;
-  max-width: 650px;
-  text-align: justify;
+  color: var(--terminal-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 700px;
+  text-align: center;
+  background-color: var(--terminal-surface);
+  padding: 25px;
+  border-radius: 4px;
+  border: 1px solid var(--terminal-border);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .profile-hero .hero-about-text strong {
-  color: var(--theme-primary-purple);
+  color: var(--terminal-accent-purple);
+  text-shadow: 0 0 3px rgba(138, 43, 226, 0.5);
 }
 
 .profile-hero .social-icons-hero a {
-  color: var(--theme-text-light);
-  margin: 0 15px;
-  transition: color 0.3s ease, transform 0.2s ease;
+  color: var(--terminal-accent-blue);
+  margin: 0 18px;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.2s ease, text-shadow 0.3s ease;
 }
 
 .profile-hero .social-icons-hero a:hover {
-  color: var(--theme-primary-purple);
-  transform: translateY(-5px);
+  color: var(--terminal-accent-green);
+  transform: translateY(-7px);
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
 }
 
 /* Navbar fixa */
@@ -154,86 +233,88 @@ a:hover {
 }
 
 /* Divs externas para seções com largura total e backgrounds alternados */
-.education-full-width-section {
-  background-color: var(
-    --theme-medium-dark
-  ); /* Usando o cinza azulado para esta seção */
-  padding: 5rem 0;
-}
-
-.experience-full-width-section {
-  background-color: var(
-    --theme-background-dark
-  ); /* Usando o azul marinho bem escuro */
-  padding: 5rem 0;
-}
-
+.education-full-width-section,
 .projects-full-width-section {
-  background-color: var(
-    --theme-medium-dark
-  ); /* Usando o cinza azulado para esta seção */
+  background-color: var(--terminal-surface);
+  padding: 5rem 0;
+  border-top: 1px dashed var(--terminal-border);
+  border-bottom: 1px dashed var(--terminal-border);
+}
+
+.experience-full-width-section,
+.skills-full-width-section {
+  background-color: var(--terminal-background);
   padding: 5rem 0;
 }
 
 /* Seções de Conteúdo (Formação, Experiência, Projetos, Habilidades) */
 section h2 {
-  font-size: 2.5rem;
-  color: var(--theme-primary-purple);
+  font-size: 2.8rem;
+  color: var(--terminal-accent-blue); /* TÍTULOS DE SEÇÃO EM AZUL ELÉTRICO */
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.7); /* Brilho no título AZUL */
 }
 
 section h2 .fas,
 section h2 .fab {
-  color: var(--theme-accent-cyan);
+  color: var(--terminal-accent-green); /* Ícones de título em VERDE */
+  margin-right: 15px;
 }
 
 @media (max-width: 768px) {
   section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
   }
   .profile-hero .profile-name-hero {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   .profile-hero .profile-description-hero {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .profile-hero .hero-about-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 }
 
 #education .education-card {
-  background-color: var(
-    --theme-background-dark
-  ); /* Fundo dos cards de educação */
-  border-radius: 8px;
+  background-color: var(--terminal-background);
+  border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  padding: 20px;
+  padding: 25px;
   align-items: center;
-  border: 1px solid var(--theme-border-color);
+  border: 1px solid var(--terminal-border);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#education .education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 170, 255, 0.4);
 }
 
 #education .education-card .education-img-container {
   flex-shrink: 0;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
-  border-radius: 8px;
-  border: 2px solid var(--theme-accent-blue);
+  border-radius: 4px;
+  border: 2px solid var(--terminal-accent-blue);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--theme-medium-dark); /* Fundo para a imagem */
+  background-color: var(--terminal-surface);
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
 }
 
 #education .education-card .education-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  filter: brightness(1.2);
 }
 
 #education .education-card .education-details {
@@ -241,21 +322,22 @@ section h2 .fab {
 }
 
 #education .education-card .education-title {
-  font-size: 1.5rem;
-  color: var(--theme-text-light);
+  font-size: 1.6rem;
+  color: var(--terminal-accent-blue); /* Título da formação em AZUL */
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 #education .education-card .education-subtitle {
-  font-size: 1.1rem;
-  color: var(--theme-accent-cyan);
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: var(--terminal-accent-green); /* Subtítulo em VERDE */
+  margin-bottom: 8px;
 }
 
 #education .education-card .education-year {
-  font-size: 0.9rem;
-  color: var(--theme-text-muted);
-  font-weight: bold;
+  font-size: 1rem;
+  color: var(--terminal-text-secondary);
+  font-weight: normal;
 }
 
 /* Estilos para a Linha do Tempo da Experiência */
@@ -271,15 +353,15 @@ section h2 .fab {
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 4px;
-  background-color: var(--theme-border-color);
-  margin-left: -2px;
+  width: 2px;
+  background-color: var(--terminal-border);
+  margin-left: -1px;
   z-index: 0;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   display: flex;
   align-items: flex-start;
   width: 100%;
@@ -297,33 +379,40 @@ section h2 .fab {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: var(--theme-primary-purple);
+  width: 30px;
+  height: 30px;
+  background-color: var(--terminal-accent-green);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--theme-text-light);
-  font-size: 1.2rem;
+  color: var(--terminal-background);
+  font-size: 1rem;
   z-index: 1;
-  border: 3px solid var(--theme-accent-cyan);
+  border: 2px solid var(--terminal-accent-blue);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
 }
 
 .timeline-item .timeline-content {
   width: 45%;
-  padding: 20px;
-  background-color: var(--theme-medium-dark); /* Fundo dos cards da timeline */
-  border-radius: 8px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  background-color: var(--terminal-surface);
+  border-radius: 4px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.6);
   position: relative;
-  border: 1px solid var(--theme-border-color);
+  border: 1px solid var(--terminal-border);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.timeline-item .timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.8), 0 0 12px rgba(0, 170, 255, 0.4); /* Brilho azul no hover */
 }
 
 .timeline-item .timeline-content::after {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 25px;
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
@@ -337,7 +426,7 @@ section h2 .fab {
 
 .timeline-item:nth-child(even) .timeline-content::after {
   right: -10px;
-  border-left: 10px solid var(--theme-medium-dark); /* Cor da seta igual ao fundo do card */
+  border-left: 10px solid var(--terminal-surface);
 }
 
 /* Seta para itens à esquerda da linha (conteúdo à direita) */
@@ -347,25 +436,30 @@ section h2 .fab {
 
 .timeline-item:nth-child(odd) .timeline-content::after {
   left: -10px;
-  border-right: 10px solid var(--theme-medium-dark); /* Cor da seta igual ao fundo do card */
+  border-right: 10px solid var(--terminal-surface);
 }
 
 .timeline-item .card-title {
-  color: var(--theme-primary-purple);
+  color: var(--terminal-accent-blue); /* Título da experiência em AZUL */
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 
 .timeline-item .card-subtitle {
-  color: var(--theme-text-muted);
+  color: var(--terminal-accent-green); /* Subtítulo em VERDE */
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
 .timeline-item h6 {
-  color: var(--theme-text-light);
+  color: var(--terminal-text-primary);
+  font-size: 0.95rem;
 }
 
 .timeline-item .timeline-dates {
   font-size: 0.9rem;
-  color: var(--theme-accent-cyan);
-  margin-bottom: 10px;
+  color: var(--terminal-accent-green);
+  margin-bottom: 12px;
   font-weight: bold;
 }
 
@@ -373,152 +467,89 @@ section h2 .fab {
 .timeline-divider {
   border: 0;
   height: 1px;
-  background-color: var(--theme-border-color);
+  background-color: var(--terminal-border);
   opacity: 0.7;
-  margin: 15px 0;
-}
-
-/* Responsividade para a Linha do Tempo */
-@media (max-width: 992px) {
-  .timeline::before {
-    left: 20px;
-    margin-left: 0;
-  }
-
-  .timeline-item {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-  }
-
-  .timeline-item .timeline-dot {
-    left: 20px;
-    transform: translateX(-50%);
-  }
-
-  .timeline-item .timeline-content {
-    width: calc(100% - 60px) !important;
-    margin-left: 60px !important;
-    margin-right: 0 !important;
-  }
-
-  .timeline-item .timeline-content::after {
-    left: -10px !important;
-    right: auto !important;
-    border-right: 10px solid var(--theme-medium-dark) !important;
-    border-left: none !important;
-  }
+  margin: 20px 0;
 }
 
 /* Estilos para a seção de Projetos */
-#projects .btn-primary {
-  background-color: var(--theme-button-primary-bg);
-  border-color: var(--theme-button-primary-bg);
-  color: var(--theme-button-primary-text);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-#projects .btn-primary:hover {
-  background-color: var(--theme-secondary-violet);
-  border-color: var(--theme-secondary-violet);
-}
-
-#projects .btn-secondary {
-  background-color: var(--theme-button-secondary-bg);
-  border-color: var(--theme-button-secondary-border);
-  color: var(--theme-button-secondary-text);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-#projects .btn-secondary:hover {
-  background-color: var(--theme-border-color);
-  border-color: var(--theme-border-color);
-}
-
 #projects .project-card .card {
-  background-color: var(
-    --theme-background-dark
-  ); /* Fundo dos cards de projetos */
-  border: 1px solid var(--theme-border-color);
-  border-radius: 8px;
+  background-color: var(--terminal-background);
+  border: 1px solid var(--terminal-border);
+  border-radius: 4px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#projects .project-card .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 170, 255, 0.5); /* Brilho AZUL no hover */
 }
 
 #projects .project-card .card-title {
-  color: var(--theme-primary-purple);
-  font-size: 1.4rem;
+  color: var(--terminal-accent-blue); /* Título do projeto em AZUL */
+  font-size: 1.5rem;
 }
 
 #projects .project-card .card-subtitle {
-  color: var(--theme-accent-cyan);
-  font-size: 1rem;
+  color: var(--terminal-accent-green); /* Subtítulo do projeto em VERDE */
+  font-size: 1.1rem;
 }
 
 #projects .project-card .card-text {
-  color: var(--theme-text-light);
+  color: var(--terminal-text-secondary);
   font-size: 0.95rem;
 }
 
-#projects .project-card .project-links .btn-info {
-  background-color: var(--theme-accent-blue);
-  border-color: var(--theme-accent-blue);
-  color: var(
-    --theme-button-primary-text
-  ); /* Cor do texto para ser legível no botão */
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-#projects .project-card .project-links .btn-info:hover {
-  background-color: var(--theme-secondary-violet);
-  border-color: var(--theme-secondary-violet);
+#projects .project-card .project-links .btn {
+  margin-right: 10px;
 }
 
 /* === Estilos para a Seção de Habilidades (Skills) === */
 .skills-section {
-  background-color: var(
-    --theme-background-dark
-  ); /* Fundo da seção de habilidades */
+  background-color: var(--terminal-background);
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
   margin-bottom: 3rem;
-  border: 1px solid var(--theme-border-color);
+  border: 1px solid var(--terminal-border);
 }
 
 /* Estilo dos botões de filtro na seção de habilidades */
 .skills-section .button-group .btn {
-  border-color: var(--theme-accent-cyan);
-  color: var(--theme-accent-cyan);
+  border-color: var(--terminal-accent-blue); /* Borda AZUL */
+  color: var(--terminal-accent-blue);
   background-color: transparent;
-  transition: all 0.3s ease;
 }
 
 .skills-section .button-group .btn.active {
-  background-color: var(--theme-accent-cyan);
-  color: var(--theme-background-dark); /* Texto escuro no botão ativo */
-  border-color: var(--theme-accent-cyan);
+  background-color: var(--terminal-accent-blue);
+  color: var(--terminal-background); /* Texto escuro no botão ativo */
+  border-color: var(--terminal-accent-blue);
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.7); /* Brilho azul */
 }
 
 .skills-section .button-group .btn:hover:not(.active) {
-  background-color: rgba(0, 255, 255, 0.2);
-  color: var(--theme-accent-cyan);
+  background-color: rgba(0, 170, 255, 0.2); /* AZUL com transparência */
+  color: var(--terminal-accent-blue);
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
 }
 
 /* Estilo para os badges de habilidade */
 .skill-item img {
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   padding: 5px;
-  background-color: var(--theme-medium-dark); /* Fundo dos badges */
+  background-color: var(--terminal-surface);
   border-radius: 4px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Sombra um pouco mais forte */
-  height: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  height: 40px;
   object-fit: contain;
-  border: 1px solid var(--theme-border-color);
+  border: 1px solid var(--terminal-border);
 }
 
 .skill-item img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5); /* Brilho ciano no hover mais intenso */
+  transform: translateY(-7px);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.6); /* Brilho VERDE no hover */
 }
 
 .skill-item {
@@ -536,7 +567,9 @@ section h2 .fab {
 
 /* Footer */
 .footer {
-  background-color: var(--theme-background-dark);
-  color: var(--theme-text-muted);
+  background-color: var(--terminal-background);
+  color: var(--terminal-text-secondary);
   font-size: 0.9rem;
+  padding: 1.5rem 0;
+  border-top: 1px dashed var(--terminal-border);
 }
