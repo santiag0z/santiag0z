@@ -1,26 +1,27 @@
-/* Custom Properties (Variables) para o novo tema */
+/* Custom Properties (Variables) para o novo tema "Hacking Dark Enhanced" */
 :root {
   /* Cores Base */
-  --theme-background-dark: #000049; /* Azul marinho muito escuro, quase preto */
-  --theme-dark-gray: #4b414c; /* Cinza escuro/roxo acinzentado para seções e cards */
-  --theme-text-light: #e0e0e0; /* Texto claro para contraste */
-  --theme-text-muted: #a0a0a0; /* Texto mais suave, para detalhes */
+  --theme-background-dark: #1a1e26; /* Fundo principal bem escuro, quase preto-azulado */
+  --theme-medium-dark: #2a303d; /* Um cinza azulado escuro para seções e cards secundários */
+  --theme-text-light: #e0e0e0; /* Texto claro para bom contraste */
+  --theme-text-muted: #9fa6b2; /* Texto mais suave para detalhes e legendas */
 
   /* Cores de Destaque */
-  --theme-primary-purple: #8a2be2; /* Roxo vibrante para primário/destaque (mantido) */
-  --theme-secondary-violet: #6a0dad; /* Violeta mais escuro para secundário (mantido) */
-  --theme-accent-blue: #00bfff; /* Azul claro (DeepSkyBlue) para acentos (mantido) */
-  --theme-accent-cyan: #00ffff; /* Ciano para outros detalhes (mantido) */
+  --theme-primary-purple: #8e5bdc; /* Roxo vibrante para destaques, mais próximo do que aparece nas referências */
+  --theme-secondary-violet: #6b3fc2; /* Violeta mais escuro para hover de roxo */
+  --theme-accent-blue: #00bcd4; /* Azul turquesa para acentos, mais próximo do ciano nas imagens */
+  --theme-accent-cyan: #00ffff; /* Ciano puro para outros detalhes e links (mantido forte) */
+  --theme-highlight-green: #00e676; /* Um verde vibrante para progresso ou sucesso */
 
   /* Cores para elementos específicos (botões, links, etc.) */
   --theme-button-primary-bg: var(--theme-primary-purple);
   --theme-button-primary-text: var(--theme-text-light);
-  --theme-button-secondary-bg: var(--theme-dark-gray);
+  --theme-button-secondary-bg: var(--theme-medium-dark);
   --theme-button-secondary-border: var(--theme-text-muted);
   --theme-button-secondary-text: var(--theme-text-light);
   --theme-link-color: var(--theme-accent-cyan);
   --theme-link-hover-color: var(--theme-accent-blue);
-  --theme-border-color: #615a6b; /* Uma cor de borda que harmonize com #4b414c */
+  --theme-border-color: #3b4453; /* Uma cor de borda que harmonize com os novos tons */
 }
 
 /* Estilos Globais */
@@ -33,9 +34,7 @@ body {
 /* Navbar e Footer */
 .navbar,
 .footer {
-  background-color: var(
-    --theme-background-dark
-  ); /* Usando o azul marinho bem escuro */
+  background-color: var(--theme-background-dark);
   border-bottom: 1px solid var(--theme-border-color);
 }
 
@@ -55,16 +54,18 @@ body {
 
 /* Cards Genéricos */
 .card {
-  background-color: var(--theme-dark-gray); /* Fundo dos cards */
+  background-color: var(--theme-medium-dark); /* Fundo dos cards */
   color: var(--theme-text-light);
   border: 1px solid var(--theme-border-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra mais intensa para destacar do fundo */
+  border-radius: 8px; /* Cantos um pouco mais arredondados */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Sombra mais intensa para destacar */
 }
 
 .card .card-header,
 .card .card-footer {
-  background-color: var(--theme-background-dark);
+  background-color: var(
+    --theme-background-dark
+  ); /* Mais escuro para header/footer do card */
   border-bottom: 1px solid var(--theme-border-color);
 }
 
@@ -81,7 +82,7 @@ a:hover {
 
 /* Barras de Progresso (se houver) */
 .progress-bar {
-  background-color: var(--theme-primary-purple);
+  background-color: var(--theme-highlight-green); /* Verde para progresso */
 }
 
 /* Seção Hero */
@@ -102,7 +103,7 @@ a:hover {
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid var(--theme-primary-purple);
-  box-shadow: 0 0 15px var(--theme-primary-purple);
+  box-shadow: 0 0 20px var(--theme-primary-purple); /* Sombra mais destacada */
 }
 
 .profile-hero .profile-name-hero {
@@ -111,7 +112,7 @@ a:hover {
   margin-top: 25px;
   margin-bottom: 10px;
   color: var(--theme-text-light);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8); /* Sombra de texto mais intensa */
 }
 
 .profile-hero .profile-description-hero {
@@ -154,17 +155,23 @@ a:hover {
 
 /* Divs externas para seções com largura total e backgrounds alternados */
 .education-full-width-section {
-  background-color: var(--theme-dark-gray); /* #4b414c */
+  background-color: var(
+    --theme-medium-dark
+  ); /* Usando o cinza azulado para esta seção */
   padding: 5rem 0;
 }
 
 .experience-full-width-section {
-  background-color: var(--theme-background-dark); /* #000049 */
+  background-color: var(
+    --theme-background-dark
+  ); /* Usando o azul marinho bem escuro */
   padding: 5rem 0;
 }
 
 .projects-full-width-section {
-  background-color: var(--theme-dark-gray); /* #4b414c */
+  background-color: var(
+    --theme-medium-dark
+  ); /* Usando o cinza azulado para esta seção */
   padding: 5rem 0;
 }
 
@@ -202,7 +209,7 @@ section h2 .fab {
 #education .education-card {
   background-color: var(
     --theme-background-dark
-  ); /* Fundo #000049 para cards de educação */
+  ); /* Fundo dos cards de educação */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   padding: 20px;
@@ -220,7 +227,7 @@ section h2 .fab {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--theme-dark-gray); /* Fundo #4b414c para a imagem */
+  background-color: var(--theme-medium-dark); /* Fundo para a imagem */
 }
 
 #education .education-card .education-img {
@@ -306,9 +313,9 @@ section h2 .fab {
 .timeline-item .timeline-content {
   width: 45%;
   padding: 20px;
-  background-color: var(--theme-dark-gray); /* Fundo dos cards da timeline */
+  background-color: var(--theme-medium-dark); /* Fundo dos cards da timeline */
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
   position: relative;
   border: 1px solid var(--theme-border-color);
 }
@@ -330,7 +337,7 @@ section h2 .fab {
 
 .timeline-item:nth-child(even) .timeline-content::after {
   right: -10px;
-  border-left: 10px solid var(--theme-dark-gray); /* Cor da seta igual ao fundo do card */
+  border-left: 10px solid var(--theme-medium-dark); /* Cor da seta igual ao fundo do card */
 }
 
 /* Seta para itens à esquerda da linha (conteúdo à direita) */
@@ -340,7 +347,7 @@ section h2 .fab {
 
 .timeline-item:nth-child(odd) .timeline-content::after {
   left: -10px;
-  border-right: 10px solid var(--theme-dark-gray); /* Cor da seta igual ao fundo do card */
+  border-right: 10px solid var(--theme-medium-dark); /* Cor da seta igual ao fundo do card */
 }
 
 .timeline-item .card-title {
@@ -398,7 +405,7 @@ section h2 .fab {
   .timeline-item .timeline-content::after {
     left: -10px !important;
     right: auto !important;
-    border-right: 10px solid var(--theme-dark-gray) !important;
+    border-right: 10px solid var(--theme-medium-dark) !important;
     border-left: none !important;
   }
 }
@@ -431,10 +438,10 @@ section h2 .fab {
 #projects .project-card .card {
   background-color: var(
     --theme-background-dark
-  ); /* Fundo #000049 para cards de projetos */
+  ); /* Fundo dos cards de projetos */
   border: 1px solid var(--theme-border-color);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
 }
 
 #projects .project-card .card-title {
@@ -455,7 +462,9 @@ section h2 .fab {
 #projects .project-card .project-links .btn-info {
   background-color: var(--theme-accent-blue);
   border-color: var(--theme-accent-blue);
-  color: var(--theme-text-light);
+  color: var(
+    --theme-button-primary-text
+  ); /* Cor do texto para ser legível no botão */
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -466,10 +475,12 @@ section h2 .fab {
 
 /* === Estilos para a Seção de Habilidades (Skills) === */
 .skills-section {
-  background-color: var(--theme-background-dark); /* Fundo #000049 */
+  background-color: var(
+    --theme-background-dark
+  ); /* Fundo da seção de habilidades */
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
   margin-bottom: 3rem;
   border: 1px solid var(--theme-border-color);
 }
@@ -497,9 +508,9 @@ section h2 .fab {
 .skill-item img {
   transition: transform 0.2s ease-in-out;
   padding: 5px;
-  background-color: var(--theme-dark-gray); /* Fundo #4b414c para os badges */
+  background-color: var(--theme-medium-dark); /* Fundo dos badges */
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra um pouco mais forte */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Sombra um pouco mais forte */
   height: 30px;
   object-fit: contain;
   border: 1px solid var(--theme-border-color);
@@ -507,7 +518,7 @@ section h2 .fab {
 
 .skill-item img:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4); /* Brilho ciano no hover mais intenso */
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5); /* Brilho ciano no hover mais intenso */
 }
 
 .skill-item {
@@ -525,7 +536,7 @@ section h2 .fab {
 
 /* Footer */
 .footer {
-  background-color: var(--theme-background-dark); /* Fundo do footer */
+  background-color: var(--theme-background-dark);
   color: var(--theme-text-muted);
   font-size: 0.9rem;
 }
