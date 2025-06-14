@@ -1,68 +1,91 @@
-/* CSS Custom Properties (Variables) for Dracula Palette */
+/* Custom Properties (Variables) para o novo tema */
 :root {
-  --dracula-background: #282a36;
-  --dracula-current-line: #44475a;
-  --dracula-selection: #44475a;
-  --dracula-foreground: #f8f8f2;
-  --dracula-comment: #6272a4;
-  --dracula-cyan: #8be9fd;
-  --dracula-green: #50fa7b;
-  --dracula-orange: #ffb86c;
-  --dracula-pink: #ff79c6;
-  --dracula-purple: #bd93f9;
-  --dracula-red: #ff5555;
-  --dracula-yellow: #f1fa8c;
-  /* New variable for the darker background, same as experience section */
-  --dracula-darker-background: #21222c;
+  /* Cores Base */
+  --theme-background-dark: #1a1a1a; /* Preto bem escuro para o fundo principal */
+  --theme-dark-gray: #2c2c2c; /* Cinza escuro para seções e cards */
+  --theme-text-light: #e0e0e0; /* Texto claro para contraste */
+  --theme-text-muted: #a0a0a0; /* Texto mais suave, para detalhes */
+
+  /* Cores de Destaque */
+  --theme-primary-purple: #8a2be2; /* Roxo vibrante para primário/destaque */
+  --theme-secondary-violet: #6a0dad; /* Violeta mais escuro para secundário */
+  --theme-accent-blue: #00bfff; /* Azul claro (DeepSkyBlue) para acentos */
+  --theme-accent-cyan: #00ffff; /* Ciano para outros detalhes */
+
+  /* Coores para elementos específicos (botões, links, etc.) */
+  --theme-button-primary-bg: var(--theme-primary-purple);
+  --theme-button-primary-text: var(--theme-text-light);
+  --theme-button-secondary-bg: var(--theme-dark-gray);
+  --theme-button-secondary-border: var(--theme-text-muted);
+  --theme-button-secondary-text: var(--theme-text-light);
+  --theme-link-color: var(--theme-accent-cyan);
+  --theme-link-hover-color: var(--theme-accent-blue);
+  --theme-border-color: #444444; /* Borda sutil */
 }
 
 /* Estilos Globais */
 body {
-  background-color: var(--dracula-background);
-  color: var(--dracula-foreground);
+  background-color: var(--theme-background-dark);
+  color: var(--theme-text-light);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte um pouco mais moderna */
 }
 
 /* Navbar e Footer */
 .navbar,
 .footer {
-  background-color: var(
-    --dracula-current-line
-  ); /* Adjusted to match current-line shade */
+  background-color: var(--theme-dark-gray);
+  border-bottom: 1px solid var(--theme-border-color); /* Uma borda sutil */
+}
+
+.navbar-brand {
+  color: var(--theme-primary-purple) !important; /* Cor do logo, se houver texto */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: var(--theme-text-light) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--theme-accent-cyan) !important;
 }
 
 /* Cards Genéricos */
 .card {
-  background-color: var(--dracula-current-line);
-  color: var(--dracula-foreground);
-  border: 1px solid var(--dracula-comment);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--theme-dark-gray);
+  color: var(--theme-text-light);
+  border: 1px solid var(--theme-border-color);
+  border-radius: 8px; /* Cantos um pouco mais arredondados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
 }
 
 .card .card-header,
 .card .card-footer {
-  background-color: var(--dracula-selection);
+  background-color: var(--theme-background-dark); /* Mais escuro para header/footer do card */
+  border-bottom: 1px solid var(--theme-border-color);
 }
 
 /* Links */
 a {
-  color: var(--dracula-cyan);
+  color: var(--theme-link-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--dracula-purple);
+  color: var(--theme-link-hover-color);
+  text-decoration: underline; /* Adiciona sublinhado no hover para clareza */
 }
 
 /* Barras de Progresso (se houver) */
 .progress-bar {
-  background-color: var(--dracula-green);
+  background-color: var(--theme-primary-purple);
 }
 
 /* Seção Hero */
 .profile-hero {
   min-height: 70vh;
-  background-color: var(--dracula-background);
+  background-color: var(--theme-background-dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +99,8 @@ a:hover {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--dracula-pink);
+  border: 4px solid var(--theme-primary-purple); /* Borda roxa de destaque */
+  box-shadow: 0 0 15px var(--theme-primary-purple); /* Efeito de brilho roxo */
 }
 
 .profile-hero .profile-name-hero {
@@ -84,31 +108,39 @@ a:hover {
   font-weight: 700;
   margin-top: 25px;
   margin-bottom: 10px;
-  color: var(--dracula-foreground);
+  color: var(--theme-text-light);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para o texto do nome */
 }
 
 .profile-hero .profile-description-hero {
   font-size: 1.3rem;
-  color: var(--dracula-yellow);
+  color: var(--theme-accent-cyan); /* Ciano para a descrição */
   margin-bottom: 30px;
 }
 
 .profile-hero .hero-about-text {
   font-size: 1.1rem;
-  color: var(--dracula-purple);
+  color: var(--theme-text-light);
   line-height: 1.6;
   margin-bottom: 20px;
-  max-width: 650px; /* Moved from inline style */
+  max-width: 650px;
+  text-align: justify; /* Justificado para uma leitura mais formal */
 }
 
+.profile-hero .hero-about-text strong {
+  color: var(--theme-primary-purple); /* Destaque em roxo para strong */
+}
+
+
 .profile-hero .social-icons-hero a {
-  color: var(--dracula-foreground);
+  color: var(--theme-text-light);
   margin: 0 15px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .profile-hero .social-icons-hero a:hover {
-  color: var(--dracula-pink);
+  color: var(--theme-primary-purple); /* Roxo no hover */
+  transform: translateY(-5px); /* Pequeno efeito de elevação */
 }
 
 /* Navbar fixa */
@@ -121,60 +153,57 @@ a:hover {
 
 /* Divs externas para seções com largura total e backgrounds alternados */
 .education-full-width-section {
-  background-color: var(
-    --dracula-current-line
-  ); /* Using current-line for consistency */
-  padding-top: 5rem; /* Adicionado para padding superior */
-  padding-bottom: 5rem; /* Adicionado para padding inferior */
+  background-color: var(--theme-dark-gray);
+  padding: 5rem 0; /* Padding consistente */
 }
 
 .experience-full-width-section {
-  background-color: var(
-    --dracula-darker-background
-  ); /* Using new darker background variable */
-  padding-top: 5rem; /* Adicionado para padding superior */
-  padding-bottom: 5rem; /* Adicionado para padding inferior */
+  background-color: var(--theme-background-dark); /* Mais escuro */
+  padding: 5rem 0;
 }
 
 .projects-full-width-section {
-  background-color: var(
-    --dracula-current-line
-  ); /* Original background for projects */
-  padding-top: 5rem; /* Adicionado para padding superior */
-  padding-bottom: 5rem; /* Adicionado para padding inferior */
+  background-color: var(--theme-dark-gray);
+  padding: 5rem 0;
 }
 
 /* Seções de Conteúdo (Formação, Experiência, Projetos, Habilidades) */
 section h2 {
   font-size: 2.5rem;
-  color: var(--dracula-purple);
+  color: var(--theme-primary-purple); /* Roxo para títulos de seção */
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
+  text-transform: uppercase; /* Mais impactante */
+  letter-spacing: 1.5px;
+}
+
+section h2 .fas, section h2 .fab {
+  color: var(--theme-accent-cyan); /* Ícones em ciano */
 }
 
 @media (max-width: 768px) {
   section h2 {
-    font-size: 2rem; /* Smaller font size for headings on smaller screens */
+    font-size: 2rem;
   }
   .profile-hero .profile-name-hero {
-    font-size: 2.5rem; /* Smaller font size for hero name on smaller screens */
+    font-size: 2.5rem;
   }
   .profile-hero .profile-description-hero {
-    font-size: 1rem; /* Smaller font size for hero description on smaller screens */
+    font-size: 1rem;
   }
   .profile-hero .hero-about-text {
-    font-size: 0.95rem; /* Smaller font size for hero about text on smaller screens */
+    font-size: 0.95rem;
   }
 }
 
 #education .education-card {
-  background-color: var(--dracula-current-line);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--theme-background-dark); /* Fundo mais escuro para cards de educação */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   padding: 20px;
   align-items: center;
-  border: 1px solid var(--dracula-comment);
+  border: 1px solid var(--theme-border-color);
 }
 
 #education .education-card .education-img-container {
@@ -183,13 +212,11 @@ section h2 {
   height: 120px;
   overflow: hidden;
   border-radius: 8px;
-  border: 2px solid var(--dracula-green);
+  border: 2px solid var(--theme-accent-blue); /* Borda azul */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(
-    --dracula-current-line
-  ); /* Consistent with card background */
+  background-color: var(--theme-dark-gray); /* Fundo para a imagem */
 }
 
 #education .education-card .education-img {
@@ -204,19 +231,19 @@ section h2 {
 
 #education .education-card .education-title {
   font-size: 1.5rem;
-  color: var(--dracula-foreground);
+  color: var(--theme-text-light);
   margin-bottom: 5px;
 }
 
 #education .education-card .education-subtitle {
   font-size: 1.1rem;
-  color: var(--dracula-orange);
+  color: var(--theme-accent-cyan); /* Ciano para o subtítulo */
   margin-bottom: 5px;
 }
 
 #education .education-card .education-year {
   font-size: 0.9rem;
-  color: var(--dracula-cyan);
+  color: var(--theme-text-muted);
   font-weight: bold;
 }
 
@@ -234,7 +261,7 @@ section h2 {
   bottom: 0;
   left: 50%;
   width: 4px;
-  background-color: var(--dracula-comment);
+  background-color: var(--theme-border-color);
   margin-left: -2px;
   z-index: 0;
 }
@@ -261,25 +288,25 @@ section h2 {
   transform: translateX(-50%);
   width: 40px;
   height: 40px;
-  background-color: var(--dracula-pink);
+  background-color: var(--theme-primary-purple);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--dracula-background);
+  color: var(--theme-text-light); /* Ícone no dot claro */
   font-size: 1.2rem;
   z-index: 1;
-  border: 3px solid var(--dracula-comment);
+  border: 3px solid var(--theme-accent-cyan); /* Borda ciano no dot */
 }
 
 .timeline-item .timeline-content {
   width: 45%;
   padding: 20px;
-  background-color: var(--dracula-current-line);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--theme-dark-gray); /* Fundo dos cards da timeline */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   position: relative;
-  border: 1px solid var(--dracula-comment);
+  border: 1px solid var(--theme-border-color);
 }
 
 .timeline-item .timeline-content::after {
@@ -299,7 +326,7 @@ section h2 {
 
 .timeline-item:nth-child(even) .timeline-content::after {
   right: -10px;
-  border-left: 10px solid var(--dracula-current-line);
+  border-left: 10px solid var(--theme-dark-gray); /* Cor da seta igual ao fundo do card */
 }
 
 /* Seta para itens à esquerda da linha (conteúdo à direita) */
@@ -309,12 +336,24 @@ section h2 {
 
 .timeline-item:nth-child(odd) .timeline-content::after {
   left: -10px;
-  border-right: 10px solid var(--dracula-current-line);
+  border-right: 10px solid var(--theme-dark-gray); /* Cor da seta igual ao fundo do card */
+}
+
+.timeline-item .card-title {
+  color: var(--theme-primary-purple); /* Título da empresa em roxo */
+}
+
+.timeline-item .card-subtitle {
+  color: var(--theme-text-muted);
+}
+
+.timeline-item h6 {
+  color: var(--theme-text-light);
 }
 
 .timeline-item .timeline-dates {
   font-size: 0.9rem;
-  color: var(--dracula-yellow);
+  color: var(--theme-accent-cyan); /* Datas em ciano */
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -323,9 +362,9 @@ section h2 {
 .timeline-divider {
   border: 0;
   height: 1px;
-  background-color: var(--dracula-comment);
+  background-color: var(--theme-border-color);
   opacity: 0.7;
-  margin: 15px 0; /* Adjusted margins */
+  margin: 15px 0;
 }
 
 /* Responsividade para a Linha do Tempo */
@@ -355,114 +394,114 @@ section h2 {
   .timeline-item .timeline-content::after {
     left: -10px !important;
     right: auto !important;
-    border-right: 10px solid var(--dracula-current-line) !important;
+    border-right: 10px solid var(--theme-dark-gray) !important;
     border-left: none !important;
   }
 }
 
 /* Estilos para a seção de Projetos */
 #projects .btn-primary {
-  background-color: var(--dracula-green);
-  border-color: var(--dracula-green);
-  color: var(--dracula-background);
+  background-color: var(--theme-button-primary-bg);
+  border-color: var(--theme-button-primary-bg);
+  color: var(--theme-button-primary-text);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 #projects .btn-primary:hover {
-  filter: brightness(1.2);
+  background-color: var(--theme-secondary-violet);
+  border-color: var(--theme-secondary-violet);
 }
 
 #projects .btn-secondary {
-  background-color: var(--dracula-comment);
-  border-color: var(--dracula-comment);
-  color: var(--dracula-foreground);
+  background-color: var(--theme-button-secondary-bg);
+  border-color: var(--theme-button-secondary-border);
+  color: var(--theme-button-secondary-text);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 #projects .btn-secondary:hover {
-  filter: brightness(1.2);
+  background-color: var(--theme-border-color);
+  border-color: var(--theme-border-color);
 }
 
 #projects .project-card .card {
-  background-color: var(--dracula-current-line);
-  border: 1px solid var(--dracula-comment);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--theme-background-dark); /* Fundo escuro para cards de projetos */
+  border: 1px solid var(--theme-border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 #projects .project-card .card-title {
-  color: var(--dracula-foreground);
+  color: var(--theme-primary-purple); /* Título do projeto em roxo */
   font-size: 1.4rem;
 }
 
 #projects .project-card .card-subtitle {
-  color: var(--dracula-orange);
+  color: var(--theme-accent-cyan); /* Subtítulo em ciano */
   font-size: 1rem;
 }
 
 #projects .project-card .card-text {
-  color: var(--dracula-foreground);
+  color: var(--theme-text-light);
   font-size: 0.95rem;
 }
 
 #projects .project-card .project-links .btn-info {
-  background-color: var(--dracula-cyan);
-  border-color: var(--dracula-cyan);
-  color: var(--dracula-background);
+  background-color: var(--theme-accent-blue); /* Botão de link em azul */
+  border-color: var(--theme-accent-blue);
+  color: var(--theme-text-light);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 #projects .project-card .project-links .btn-info:hover {
-  background-color: var(--dracula-purple);
-  border-color: var(--dracula-purple);
+  background-color: var(--theme-secondary-violet); /* Violeta no hover */
+  border-color: var(--theme-secondary-violet);
 }
 
 /* === Estilos para a Seção de Habilidades (Skills) === */
 .skills-section {
-  background-color: var(
-    --dracula-darker-background
-  ); /* Changed to match experience background */
+  background-color: var(--theme-background-dark); /* Fundo escuro igual à experiência */
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   margin-bottom: 3rem;
+  border: 1px solid var(--theme-border-color);
 }
 
 /* Estilo dos botões de filtro na seção de habilidades */
 .skills-section .button-group .btn {
-  border-color: var(--dracula-cyan);
-  color: var(--dracula-cyan);
+  border-color: var(--theme-accent-cyan);
+  color: var(--theme-accent-cyan);
   background-color: transparent;
   transition: all 0.3s ease;
 }
 
 .skills-section .button-group .btn.active {
-  background-color: var(--dracula-cyan);
-  color: var(--dracula-background);
-  border-color: var(--dracula-cyan);
+  background-color: var(--theme-accent-cyan);
+  color: var(--theme-background-dark); /* Texto escuro no botão ativo */
+  border-color: var(--theme-accent-cyan);
 }
 
 .skills-section .button-group .btn:hover:not(.active) {
-  background-color: color-mix(
-    in srgb,
-    var(--dracula-cyan) 20%,
-    transparent
-  ); /* Using color-mix for transparency */
-  color: var(--dracula-cyan);
+  background-color: rgba(0, 255, 255, 0.2); /* Ciano com transparência */
+  color: var(--theme-accent-cyan);
 }
 
 /* Estilo para os badges de habilidade */
 .skill-item img {
   transition: transform 0.2s ease-in-out;
   padding: 5px;
-  background-color: var(
-    --dracula-current-line
-  ); /* Consistent with card background */
+  background-color: var(--theme-dark-gray); /* Fundo dos badges */
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   height: 30px;
   object-fit: contain;
+  border: 1px solid var(--theme-border-color); /* Borda sutil nos badges */
 }
 
 .skill-item img:hover {
   transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3); /* Brilho ciano no hover */
 }
 
 .skill-item {
@@ -476,4 +515,10 @@ section h2 {
     width: 100%;
     margin: 5px 0;
   }
+}
+
+/* Footer */
+.footer {
+  color: var(--theme-text-muted);
+  font-size: 0.9rem;
 }
