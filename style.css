@@ -8,8 +8,8 @@
   --terminal-border: #3a3a3a; /* Borda sutil para separar blocos */
 
   /* Cores de Destaque - como sintaxe de terminal */
-  --terminal-accent-green: #00ff00; /* Verde limão brilhante (para subtítulos, hover, destaques) */
-  --terminal-accent-blue: #00aaff; /* Azul elétrico (para TÍTULOS PRINCIPAIS, links, informações) */
+  --terminal-accent-green: #00ff00; /* Verde limão brilhante (para subtítulos, hover, destaques, BOTÕES DE FILTRO ATIVOS) */
+  --terminal-accent-blue: #00aaff; /* Azul elétrico (para TÍTULOS PRINCIPAIS, links, informações, BOTÕES DE FILTRO PADRÃO) */
   --terminal-accent-purple: #8a2be2; /* Roxo profundo para elementos específicos (botões primários, etc.) */
   --terminal-accent-yellow: #ffff00; /* Amarelo para avisos */
 
@@ -135,7 +135,7 @@ a:hover {
 }
 
 .btn-info:hover {
-  background-color: var(--terminal-link-hover); /* Verde no hover */
+  background-color: var(--terminal-link-hover);
   border-color: var(--terminal-link-hover);
   box-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
 }
@@ -180,14 +180,14 @@ a:hover {
   font-weight: 700;
   margin-top: 30px;
   margin-bottom: 15px;
-  color: var(--terminal-accent-blue); /* NOME PRINCIPAL EM AZUL ELÉTRICO */
-  text-shadow: 0 0 10px rgba(0, 170, 255, 0.8), 0 0 20px rgba(0, 170, 255, 0.4); /* Brilho neon azul */
+  color: var(--terminal-accent-blue);
+  text-shadow: 0 0 10px rgba(0, 170, 255, 0.8), 0 0 20px rgba(0, 170, 255, 0.4);
   letter-spacing: 2px;
 }
 
 .profile-hero .profile-description-hero {
   font-size: 1.4rem;
-  color: var(--terminal-accent-green); /* Descrição em verde vibrante */
+  color: var(--terminal-accent-green);
   margin-bottom: 40px;
   text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
@@ -241,27 +241,26 @@ a:hover {
   border-bottom: 1px dashed var(--terminal-border);
 }
 
-.experience-full-width-section,
-.skills-full-width-section {
+.experience-full-width-section {
   background-color: var(--terminal-background);
   padding: 5rem 0;
 }
 
-/* Seções de Conteúdo (Formação, Experiência, Projetos, Habilidades) */
+/* Seções de Conteúdo (Formação, Experiência, Projetos) */
 section h2 {
   font-size: 2.8rem;
-  color: var(--terminal-accent-blue); /* TÍTULOS DE SEÇÃO EM AZUL ELÉTRICO */
+  color: var(--terminal-accent-blue);
   font-weight: bold;
   margin-bottom: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-shadow: 0 0 8px rgba(0, 170, 255, 0.7); /* Brilho no título AZUL */
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.7);
 }
 
 section h2 .fas,
 section h2 .fab {
-  color: var(--terminal-accent-green); /* Ícones de título em VERDE */
+  color: var(--terminal-accent-green);
   margin-right: 15px;
 }
 
@@ -323,14 +322,14 @@ section h2 .fab {
 
 #education .education-card .education-title {
   font-size: 1.6rem;
-  color: var(--terminal-accent-blue); /* Título da formação em AZUL */
+  color: var(--terminal-accent-blue);
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 #education .education-card .education-subtitle {
   font-size: 1.2rem;
-  color: var(--terminal-accent-green); /* Subtítulo em VERDE */
+  color: var(--terminal-accent-green);
   margin-bottom: 8px;
 }
 
@@ -406,7 +405,7 @@ section h2 .fab {
 
 .timeline-item .timeline-content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.8), 0 0 12px rgba(0, 170, 255, 0.4); /* Brilho azul no hover */
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.8), 0 0 12px rgba(0, 170, 255, 0.4);
 }
 
 .timeline-item .timeline-content::after {
@@ -440,13 +439,13 @@ section h2 .fab {
 }
 
 .timeline-item .card-title {
-  color: var(--terminal-accent-blue); /* Título da experiência em AZUL */
+  color: var(--terminal-accent-blue);
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
 
 .timeline-item .card-subtitle {
-  color: var(--terminal-accent-green); /* Subtítulo em VERDE */
+  color: var(--terminal-accent-green);
   font-size: 1rem;
   margin-bottom: 5px;
 }
@@ -483,16 +482,16 @@ section h2 .fab {
 
 #projects .project-card .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 170, 255, 0.5); /* Brilho AZUL no hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 170, 255, 0.5);
 }
 
 #projects .project-card .card-title {
-  color: var(--terminal-accent-blue); /* Título do projeto em AZUL */
+  color: var(--terminal-accent-blue);
   font-size: 1.5rem;
 }
 
 #projects .project-card .card-subtitle {
-  color: var(--terminal-accent-green); /* Subtítulo do projeto em VERDE */
+  color: var(--terminal-accent-green);
   font-size: 1.1rem;
 }
 
@@ -505,64 +504,34 @@ section h2 .fab {
   margin-right: 10px;
 }
 
-/* === Estilos para a Seção de Habilidades (Skills) === */
-.skills-section {
-  background-color: var(--terminal-background);
-  padding: 30px;
-  border-radius: 4px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
-  margin-bottom: 3rem;
-  border: 1px solid var(--terminal-border);
+/* === Estilos para os Botões de Filtro de Projetos === */
+#projects .button-group .btn {
+  border-color: var(--terminal-accent-blue); /* Borda em azul elétrico */
+  color: var(--terminal-accent-blue); /* Texto em azul elétrico */
+  background-color: transparent; /* Fundo transparente */
+  transition: all 0.3s ease;
 }
 
-/* Estilo dos botões de filtro na seção de habilidades */
-.skills-section .button-group .btn {
-  border-color: var(--terminal-accent-blue); /* Borda AZUL */
-  color: var(--terminal-accent-blue);
-  background-color: transparent;
-}
-
-.skills-section .button-group .btn.active {
-  background-color: var(--terminal-accent-blue);
+#projects .button-group .btn.active {
+  background-color: var(
+    --terminal-accent-green
+  ); /* Fundo verde limão quando ativo */
   color: var(--terminal-background); /* Texto escuro no botão ativo */
-  border-color: var(--terminal-accent-blue);
-  box-shadow: 0 0 10px rgba(0, 170, 255, 0.7); /* Brilho azul */
+  border-color: var(
+    --terminal-accent-green
+  ); /* Borda verde limão quando ativo */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Brilho verde */
 }
 
-.skills-section .button-group .btn:hover:not(.active) {
-  background-color: rgba(0, 170, 255, 0.2); /* AZUL com transparência */
-  color: var(--terminal-accent-blue);
-  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
-}
-
-/* Estilo para os badges de habilidade */
-.skill-item img {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  padding: 5px;
-  background-color: var(--terminal-surface);
-  border-radius: 4px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-  height: 40px;
-  object-fit: contain;
-  border: 1px solid var(--terminal-border);
-}
-
-.skill-item img:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.6); /* Brilho VERDE no hover */
-}
-
-.skill-item {
-  display: block;
-  text-align: center;
-}
-
-/* Ajustes de responsividade para os botões de filtro */
-@media (max-width: 576px) {
-  .button-group .btn {
-    width: 100%;
-    margin: 5px 0;
-  }
+#projects .button-group .btn:hover:not(.active) {
+  background-color: rgba(
+    0,
+    255,
+    0,
+    0.2
+  ); /* Fundo verde limão com transparência no hover (não ativo) */
+  color: var(--terminal-accent-green); /* Texto verde limão no hover */
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Brilho verde */
 }
 
 /* Footer */
