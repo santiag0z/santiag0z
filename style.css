@@ -10,11 +10,12 @@
   /* Cores de Destaque - como sintaxe de terminal */
   --terminal-accent-green: #00ff00; /* Verde limão brilhante (para subtítulos, hover, destaques, BOTÕES DE FILTRO ATIVOS) */
   --terminal-accent-blue: #00aaff; /* Azul elétrico (para TÍTULOS PRINCIPAIS, links, informações, BOTÕES DE FILTRO PADRÃO) */
-  --terminal-accent-purple: #8a2be2; /* Roxo profundo para elementos específicos (botões primários, etc.) */
   --terminal-accent-yellow: #ffff00; /* Amarelo para avisos */
 
   /* Cores para elementos interativos */
-  --terminal-button-bg: var(--terminal-accent-purple); /* Botão primário roxo */
+  --terminal-button-bg: var(
+    --terminal-accent-blue
+  ); /* Botão primário agora será azul */
   --terminal-button-text: var(--terminal-text-primary);
   --terminal-link-color: var(--terminal-accent-blue);
   --terminal-link-hover: var(--terminal-accent-green);
@@ -102,16 +103,18 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: var(--terminal-button-bg); /* Roxo */
+  background-color: var(--terminal-button-bg); /* Agora é azul */
   border-color: var(--terminal-button-bg);
   color: var(--terminal-button-text);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .btn-primary:hover {
-  background-color: var(--terminal-accent-purple);
-  border-color: var(--terminal-accent-purple);
-  box-shadow: 0 0 10px var(--terminal-accent-purple);
+  background-color: var(
+    --terminal-accent-green
+  ); /* Hover do botão primário agora é verde */
+  border-color: var(--terminal-accent-green);
+  box-shadow: 0 0 10px var(--terminal-accent-green);
 }
 
 .btn-secondary {
@@ -207,8 +210,8 @@ a:hover {
 }
 
 .profile-hero .hero-about-text strong {
-  color: var(--terminal-accent-purple);
-  text-shadow: 0 0 3px rgba(138, 43, 226, 0.5);
+  color: var(--terminal-accent-green); /* Alterado de roxo para verde */
+  text-shadow: 0 0 3px rgba(0, 255, 0, 0.5);
 }
 
 .profile-hero .social-icons-hero a {
