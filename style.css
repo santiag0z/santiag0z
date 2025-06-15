@@ -532,6 +532,7 @@ section h2 .fab {
     0.2
   ); /* Fundo verde limão com transparência no hover (não ativo) */
   color: var(--terminal-accent-green); /* Texto verde limão no hover */
+  border-color: var(--terminal-accent-green); /* Borda verde limão no hover */
   box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Brilho verde */
 }
 
