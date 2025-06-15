@@ -61,24 +61,9 @@
         />
         <h1 class="mt-3 profile-name-hero">Santiago.Z</h1>
         <p class="profile-description-hero">Network Analyst</p>
-        <p class="hero-about-text mt-4 mx-auto">
-          Olá! Sou Santiago Z. Silva, <strong>Analista de Redes</strong> com
-          especialização em
-          <strong>Estrutura e Gestão de Redes</strong> (UNINTER) e graduação em
-          <strong>Análise e Desenvolvimento de Sistemas</strong> (UNOPAR). Atuo
-          na
-          <a href="https://onlinetelecom.com.br/" target="_blank"
-            >Online Telecom</a
-          >
-          gerenciando os ASNs
-          <a href="https://as263327.peeringdb.com/" target="_blank"
-            >AS-263327</a
-          >
-          e
-          <a href="https://as264221.peeringdb.com/" target="_blank">AS-264221</a
-          >. Sou entusiasta por tecnologia e
-          <strong>contribuidor do LibreNMS</strong>.
-        </p>
+        <div class="hero-about-text mx-auto">
+          <p id="typing-text"></p>
+        </div>
         <div class="social-icons-hero mt-4">
           <a
             href="https://www.linkedin.com/in/santiago-z/"
@@ -404,6 +389,65 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Project filter logic
+        const projectFilterButtons =
+          document.querySelectorAll("#projects button");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        projectFilterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            projectFilterButtons.forEach((btn) => {
+              btn.classList.remove("btn-primary");
+              btn.classList.add("btn-secondary");
+            });
+
+            this.classList.remove("btn-secondary");
+            this.classList.add("btn-primary");
+
+            const filter = this.dataset.filter;
+
+            projectCards.forEach((card) => {
+              if (filter === "all" || card.dataset.category === filter) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+
+        // Trigger click on 'Todos' button for projects by default
+        document.querySelector('#projects button[data-filter="all"]').click();
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // --- INÍCIO: Lógica para o Efeito de Digitação ---
+        const typingTextElement = document.getElementById("typing-text");
+        // O texto exato que será digitado
+        const textToType = `Olá! Sou Santiago.Z, Analista de Redes com especialização em Estrutura e Gestão de Redes (UNINTER) e graduação em Análise e Desenvolvimento de Sistemas (UNOPAR). Atuo na Online Telecom gerenciando os ASNs AS-263327 e AS-264221. Sou entusiasta por tecnologia e contribuidor do LibreNMS.`;
+        let charIndex = 0;
+        const typingSpeed = 30; // Velocidade da digitação (ms por caractere)
+        const cursor = '<span class="typing-cursor">|</span>'; // Cursor intermitente
+
+        function typeWriter() {
+          if (charIndex < textToType.length) {
+            // Adiciona o caractere atual e o cursor
+            typingTextElement.innerHTML =
+              textToType.substring(0, charIndex + 1) + cursor;
+            charIndex++;
+            setTimeout(typeWriter, typingSpeed);
+          } else {
+            // Remove o cursor após a digitação completa
+            typingTextElement.innerHTML = textToType;
+          }
+        }
+
+        // Inicia o efeito de digitação quando a página carrega
+        typeWriter();
+        // --- FIM: Lógica para o Efeito de Digitação ---
+
+        // Project filter logic (seu código existente)
         const projectFilterButtons =
           document.querySelectorAll("#projects button");
         const projectCards = document.querySelectorAll(".project-card");

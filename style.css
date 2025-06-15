@@ -547,3 +547,33 @@ section h2 .fab {
   padding: 1.5rem 0;
   border-top: 1px dashed var(--terminal-border);
 }
+/* Estilo para o cursor do efeito de digitação */
+.typing-cursor {
+  display: inline-block; /* Para que o cursor possa ter altura e largura */
+  width: 8px; /* Largura do cursor */
+  height: 1.2em; /* Altura do cursor, baseada na linha de texto */
+  background-color: var(
+    --terminal-accent-green
+  ); /* Cor do cursor (verde, como em terminais) */
+  margin-left: 2px; /* Espaçamento após o texto */
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+  animation: blink-caret 0.75s step-end infinite; /* Animação de piscar */
+}
+
+/* Animação para o cursor piscar */
+@keyframes blink-caret {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--terminal-accent-green);
+  }
+}
+
+/* Garante que o texto digitado use uma fonte monoespaçada para simular terminal */
+#typing-text {
+  font-family: "Courier New", Courier, monospace; /* Fonte de terminal */
+  white-space: pre-wrap; /* Mantém quebras de linha e espaços, mas quebra texto longo */
+  color: var(--terminal-text-primary); /* Cor do texto do terminal */
+}
