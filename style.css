@@ -448,7 +448,7 @@ section h2 .fab {
 }
 
 .timeline-item .card-subtitle {
-  color: var(--terminal-accent-green);
+  color: var(--terminal-text-primary) !important; /* Agora branco */
   font-size: 1rem;
   margin-bottom: 5px;
 }
@@ -460,7 +460,7 @@ section h2 .fab {
 
 .timeline-item .timeline-dates {
   font-size: 0.9rem;
-  color: var(--terminal-accent-green);
+  color: var(--terminal-accent-green); /* Mantido em verde */
   margin-bottom: 12px;
   font-weight: bold;
 }
