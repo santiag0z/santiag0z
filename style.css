@@ -491,7 +491,7 @@ section h2 .fab {
 }
 
 #projects .project-card .card-subtitle {
-  color: var(--terminal-accent-green);
+  color: var(--terminal-text-primary) !important; /* Força a cor branca */
   font-size: 1.1rem;
 }
 
@@ -538,11 +538,8 @@ section h2 .fab {
 /* Footer */
 .footer {
   background-color: var(--terminal-background);
+  color: var(--terminal-text-secondary);
   font-size: 0.9rem;
   padding: 1.5rem 0;
   border-top: 1px dashed var(--terminal-border);
-}
-
-.footer-text {
-  color: var(--terminal-text-primary); /* Branco */
 }
