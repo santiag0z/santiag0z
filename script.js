@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (charIndex > 0) {
       textElement.textContent = phrases[phraseIndex].substring(
         0,
-        charIndex - 1
+        charIndex - 1,
       );
       charIndex--;
       setTimeout(erase, eraseSpeed);
