@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const phrases = [
     "Network Analyst...",
     "Contributor LibreNMS...",
+    "Creator of the dark Dracula theme for LibreNMS...",
     "Technologist in Systems Analysis and Development...",
+    "MBE in Computer Network Management",
   ];
   let phraseIndex = 0;
 
