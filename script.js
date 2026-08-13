@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const newTextDelay = 2000;
 
   const phrases = [
-    "Network Analyst...",
+    "Network and Systems Analyst...",
     "Contributor LibreNMS...",
     "Creator of the dark Dracula theme for LibreNMS...",
     "Technologist in Systems Analysis and Development...",
